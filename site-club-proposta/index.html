@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Digitalize Club</title>
-<meta name="description" content="12 semanas de implementação com Henrique Avila, dentro de 6 meses de Club, pra sua agência sair do “faço de tudo” e virar referência num nicho. 10x de R$ 500 ou R$ 4.500 à vista.">
+<meta name="description" content="6 meses de Club com Henrique Avila: 24 encontros ao vivo em grupo e um plano de execução de 12 semanas pra posicionar sua agência num nicho. 10x de R$ 500 ou R$ 4.500 à vista.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
@@ -98,7 +98,7 @@ h1,h2,h3{font-weight:500;letter-spacing:-.035em;line-height:1.04}
 .hero-photo .cap span{font-size:13.5px;color:var(--wt2)}
 .hero-base{position:relative;margin-top:-1px;border-top:1px solid var(--wl);background:rgba(255,255,255,.03)}
 .hero-base .row{display:grid;grid-template-columns:repeat(4,1fr)}
-.hero-base .cell{padding:26px 22px;border-left:1px solid var(--wl);display:flex;align-items:baseline;gap:12px}
+.hero-base .cell{padding:24px 22px;border-left:1px solid var(--wl);display:flex;flex-direction:column;gap:4px}
 .hero-base .cell:first-child{border-left:0;padding-left:0}
 .hero-base .cell b{font-weight:500;font-size:clamp(26px,2.4vw,34px);letter-spacing:-.04em;white-space:nowrap}
 .hero-base .cell span{font-size:13.5px;color:var(--wt2);line-height:1.3}
@@ -306,6 +306,24 @@ h1,h2,h3{font-weight:500;letter-spacing:-.035em;line-height:1.04}
   .chip span{font-size:12px}.chip b{min-width:38px;height:38px;font-size:17px}
   .foot .legal{padding-bottom:70px}
 }
+
+/* plano de execução */
+.plan{margin-top:clamp(40px,4.5vw,64px);padding:clamp(22px,3vw,36px);border-radius:var(--r-lg);background:rgba(255,255,255,.04);border:1px solid var(--wl)}
+.plan-h{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:24px}
+.plan-h h3{font-size:clamp(24px,2.4vw,32px)}.plan-h h3 .it{color:var(--blue3)}
+.plan-h p{color:var(--wt);font-size:15.5px;max-width:52ch}
+.plan-g{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.plan-g .ph{padding:20px;border-radius:16px;background:rgba(19,33,59,.7);border:1px solid var(--wl);display:flex;flex-direction:column;gap:10px}
+.plan-g .w{font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--blue3)}
+.plan-g h4{font-size:19px;font-weight:500;letter-spacing:-.02em}
+.plan-g ul{list-style:none;display:flex;flex-direction:column;gap:6px}
+.plan-g li{font-size:14px;color:var(--wt);padding-left:16px;position:relative}
+.plan-g li::before{content:"";position:absolute;left:0;top:.6em;width:6px;height:6px;border-radius:50%;background:var(--blue2)}
+.cta-c{margin-top:28px;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.cta-c span{font-size:14.5px;color:var(--ink3)}
+.step h3{font-size:18px}
+@media (max-width:1080px){.plan-g{grid-template-columns:1fr 1fr}}
+@media (max-width:720px){.plan-g{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -318,7 +336,7 @@ h1,h2,h3{font-weight:500;letter-spacing:-.035em;line-height:1.04}
 
 <header class="nav" id="nav">
   <a class="brand" href="#top"><svg><use href="#d"/></svg>Club<small>Digitalize</small></a>
-  <ul><li><a href="#diagnostico">Diagnóstico</a></li><li><a href="#tese">Cauda longa</a></li><li><a href="#metodo">Método</a></li><li><a href="#formato">Formato</a></li><li><a href="#prova">Resultados</a></li><li><a href="#faq">Dúvidas</a></li></ul>
+  <ul><li><a href="#club">O Club</a></li><li><a href="#oportunidade">A oportunidade</a></li><li><a href="#plano">Plano de execução</a></li><li><a href="#formato">Como funciona</a></li><li><a href="#prova">Resultados</a></li><li><a href="#faq">Dúvidas</a></li></ul>
   <a class="btn" href="#oferta">Garantir vaga <span class="ar"><svg><use href="#arr"/></svg></span></a>
 </header>
 
@@ -331,61 +349,61 @@ h1,h2,h3{font-weight:500;letter-spacing:-.035em;line-height:1.04}
   <div class="wrap">
     <div class="hero-grid">
       <div class="hero-copy rv">
-        <p class="eyebrow"><img src="assets/henrique-av.png" alt="">Digitalize Club · com Henrique Avila</p>
+        <p class="eyebrow"><img src="assets/henrique-av.png" alt="">Digitalize Club · mentoria em grupo com Henrique Avila</p>
         <h1>Daqui a 6 meses, você vai lembrar que foi aqui que sua agência <span class="it">parou de depender de você.</span></h1>
-        <p class="lede">Em 6 meses de Club, com 12 semanas de implementação ao lado do Henrique, você escolhe o nicho, monta a oferta e liga um funil que traz cliente novo todo mês.</p>
+        <p class="lede">6 meses de Club, com 24 encontros ao vivo em grupo e um plano de execução de 12 semanas pra posicionar sua agência num nicho e ter clientes novos todo mês.</p>
         <div class="ctas">
-          <a class="btn" href="#oferta">Quero entrar no Club <span class="ar"><svg><use href="#arr"/></svg></span></a>
+          <a class="btn" href="#oferta">Quero minha vaga <span class="ar"><svg><use href="#arr"/></svg></span></a>
           <p class="price-hint"><b>10x de R$ 500</b>ou R$ 4.500 à vista</p>
         </div>
       </div>
       <div class="hero-photo rv">
         <div class="ph"><img src="assets/henrique.jpg" alt="Henrique Avila"></div>
-        <div class="chip c1"><b>12</b><span>semanas de<br>implementação</span></div>
-        <div class="chip c2"><b>5</b><span>reuniões 1:1<br>com o Henrique</span></div>
-        <div class="chip c3"><b>24</b><span>encontros<br>em grupo</span></div>
+        <div class="chip c1"><b>12</b><span>semanas de<br>plano de execução</span></div>
+        <div class="chip c2"><b>24</b><span>encontros ao vivo<br>em grupo</span></div>
+        <div class="chip c3"><b>150+</b><span>donos de agência<br>na comunidade</span></div>
         <div class="cap"><b>Henrique Avila</b><span>Fundador da Next Digital e da Digitalize</span></div>
       </div>
     </div>
   </div>
   <div class="hero-base">
     <div class="wrap"><div class="row">
-      <div class="cell"><b>+3.000</b><span>agências mentoradas</span></div>
-      <div class="cell"><b>R$ 2 mi</b><span>por ano na Next Digital</span></div>
+      <div class="cell"><b>12 semanas</b><span>de plano de execução</span></div>
+      <div class="cell"><b>24 encontros</b><span>ao vivo, em grupo</span></div>
       <div class="cell"><b>+150</b><span>donos de agência no Club</span></div>
-      <div class="cell"><b>6 meses</b><span>de acompanhamento</span></div>
+      <div class="cell"><b>6 meses</b><span>de Club e comunidade</span></div>
     </div></div>
   </div>
 </section>
 
-<!-- DIAGNÓSTICO -->
-<section class="sec diag" id="diagnostico">
+<!-- O CLUB -->
+<section class="sec diag" id="club">
   <div class="wrap">
     <div class="sec-head rv">
-      <span class="tag">Diagnóstico</span>
-      <h2 class="h2">Você não precisa de mais um curso. <span class="it">Precisa de direção.</span></h2>
-      <p class="sub">Você já conhece o mercado por dentro. Já fez curso de tráfego, de social media, de vendas. Já fechou cliente, montou equipe e entregou resultado pros outros.</p>
+      <span class="tag">O Club</span>
+      <h2 class="h2">Essa não é mais uma <span class="it">mentoria pra agência.</span></h2>
+      <p class="sub">Você já conhece esse mercado por dentro. Já comprou curso de tráfego, de social media, de vendas. Já fechou cliente, já montou equipe, já entregou resultado pros outros.</p>
     </div>
     <div class="cards">
-      <article class="dcard rv"><span class="n">01</span><h3>Você aprendeu e executou.</h3><p>Trabalhou muito. A parte técnica nunca foi o problema.</p></article>
-      <article class="dcard rv"><span class="n">02</span><h3>Mas o lucro não ficou na agência.</h3><p>Ficou no cliente que cresceu, no desconto pra fechar, no mês apagando incêndio.</p></article>
-      <article class="dcard rv"><span class="n">03</span><h3>Porque o modelo trava.</h3><p>“Faço de tudo”, indicação e um dono que gera, vende, entrega e cobra sozinho.</p></article>
+      <article class="dcard rv"><span class="n">01</span><h3>E você aprendeu. Executou.</h3><p>Trabalhou muito.</p></article>
+      <article class="dcard rv"><span class="n">02</span><h3>Só que o lucro não ficou na agência.</h3><p>Ficou no cliente que cresceu, no desconto que você deu pra fechar, no mês que você passou apagando incêndio.</p></article>
+      <article class="dcard rv"><span class="n">03</span><h3>A culpa não é sua.</h3><p>Você aprendeu a montar agência no modelo do “faço de tudo”, da indicação e do dono que gera, vende, entrega e cobra sozinho. Esse modelo trava.</p></article>
     </div>
-    <div class="turn rv"><div class="grain"></div><p>Existe outro caminho: a <span class="it">agência nichada</span>, com sistema, que cresce sem você no centro de tudo.</p><a class="btn light" href="#tese">Entender a tese <span class="ar"><svg><use href="#arr"/></svg></span></a></div>
+    <div class="turn rv"><div class="grain"></div><p>E existe outro jeito: a <span class="it">agência nichada</span>, com sistema, que cresce sem você no centro de tudo.</p><a class="btn light" href="#oportunidade">Ver a oportunidade <span class="ar"><svg><use href="#arr"/></svg></span></a></div>
   </div>
 </section>
 
-<!-- CAUDA LONGA -->
-<section class="sec tese" id="tese">
+<!-- A OPORTUNIDADE -->
+<section class="sec tese" id="oportunidade">
   <div class="wrap">
     <div class="tese-top">
       <div class="sec-head rv" style="margin:0">
-        <span class="tag">A tese</span>
-        <h2 class="h2">O dinheiro mudou de lugar. <span class="it">Foi pra cauda longa.</span></h2>
+        <span class="tag">A oportunidade</span>
+        <h2 class="h2">A oportunidade que está na sua frente: <span class="it">a agência nichada, na cauda longa.</span></h2>
       </div>
       <div class="rv">
         <p>Em 2004, Chris Anderson publicou na Wired a tese da Cauda Longa: quando o custo de chegar no cliente despenca, o dinheiro sai dos poucos “hits” e se espalha por milhares de nichos. Cada um pequeno. Somados, maiores que a cabeça.</p>
-        <p>A Amazon provou com livros, a Netflix com filmes, o Spotify com música. Com agências é igual: o cliente procura quem já resolveu o problema dele, no mercado dele.</p>
+        <p>A Amazon provou isso com livros. A Netflix, com filmes. O Spotify, com música. Hoje acontece com agências: o cliente não procura “uma agência”, procura quem já resolveu o problema dele, no mercado dele.</p>
       </div>
     </div>
     <div class="chart rv" id="chart">
@@ -403,74 +421,83 @@ h1,h2,h3{font-weight:500;letter-spacing:-.035em;line-height:1.04}
       </svg>
     </div>
     <div class="reasons">
-      <div class="reason rv"><span class="k">Mesmo clique</span><p>Anunciar pra “empresas” ou pra “clínicas odontológicas em Campinas” custa o mesmo. <b>A barreira pra dominar um nicho caiu a quase zero.</b></p></div>
-      <div class="reason rv"><span class="k">Especialista vence</span><p>O cliente procura quem já resolveu o problema dele. <b>Quem “faz de tudo” ficou invisível.</b></p></div>
-      <div class="reason rv"><span class="k">Ticket certo</span><p>Na cabeça a briga é por preço. <b>No nicho, é por especialidade, e o ticket acompanha.</b></p></div>
-      <div class="reason rv"><span class="k">A conta fecha</span><p><b>20 a 30 clientes de ticket certo</b> fazem uma agência de R$ 50 mil por mês. Você não precisa de 3 milhões de empresas.</p></div>
-      <div class="reason wide rv"><div class="stat-83"><b>83,6%</b><p>das agências brasileiras ainda só conseguem cliente por indicação <span style="opacity:.6">(mLabs)</span>. <b>Quem se posiciona primeiro leva o nicho inteiro.</b></p></div></div>
+      <div class="reason rv"><span class="k">01</span><p>Anunciar pra “empresas” ou pra “clínicas odontológicas em Campinas” custa o mesmo clique. <b>A barreira pra dominar um nicho caiu a quase zero.</b></p></div>
+      <div class="reason rv"><span class="k">02</span><p>O cliente procura especialista. <b>A agência que “faz de tudo” ficou invisível.</b></p></div>
+      <div class="reason rv"><span class="k">03</span><p>Na cabeça do mercado, a briga é por preço. <b>Na cauda longa, é por especialidade, e com ticket certo.</b></p></div>
+      <div class="reason rv"><span class="k">04</span><p>Você não precisa de 3 milhões de empresas. <b>20 a 30 clientes de ticket certo fazem uma agência de R$ 50 mil por mês.</b></p></div>
+      <div class="reason wide rv"><div class="stat-83"><b>83,6%</b><p>E mesmo assim, das agências só conseguem cliente por indicação <span style="opacity:.6">(Panorama das Agências Digitais, mLabs)</span>. Indicação é ótima, mas é sorte com outro nome. <b>Centenas de nichos seguem sem nenhuma agência especialista. Quem se posiciona primeiro leva o nicho inteiro.</b></p></div></div>
     </div>
   </div>
 </section>
 
-<!-- PRA QUEM -->
+<!-- METADE -->
 <section class="sec" id="praquem">
   <div class="wrap who">
     <div class="sticky sec-head rv">
       <span class="tag">Pra quem é</span>
-      <h2 class="h2">Você já sabe entregar. <span class="it">Falta escolher onde jogar.</span></h2>
-      <p class="sub">O Club é pra quem já tem a parte técnica e precisa de nicho, oferta e sistema pra crescer.</p>
+      <h2 class="h2">Você já tem metade <span class="it">do que precisa.</span></h2>
+      <p class="sub">Falta a outra metade: o nicho e o sistema.</p>
     </div>
     <ul>
-      <li class="rv"><span class="p">Gestor de tráfego</span><div><h3>Você já gera resultado.</h3><p>Falta parar de vender hora de gestão e vender o resultado, com ticket correto.</p></div></li>
-      <li class="rv"><span class="p">Social media</span><div><h3>Você já produz.</h3><p>Falta sair do “faço de tudo” e ter uma oferta clara, que o cliente entende e valoriza.</p></div></li>
-      <li class="rv"><span class="p">Dono de agência</span><div><h3>Você já tem a estrutura.</h3><p>Falta previsibilidade: clientes novos todo mês, sem depender de indicação.</p></div></li>
-      <li class="rv"><span class="p">Agência com equipe</span><div><h3>Você já sabe operar.</h3><p>Falta processo: uma operação que funciona sem tudo passar por você.</p></div></li>
+      <li class="rv"><span class="p">Se você é gestor de tráfego</span><div><h3>Você já sabe gerar resultado.</h3><p>Falta parar de vender hora de gestão e começar a vender o resultado, com ticket correto.</p></div></li>
+      <li class="rv"><span class="p">Se você é social media</span><div><h3>Você já sabe produzir.</h3><p>Falta sair do “faço de tudo” e ter uma oferta clara, que o cliente entende e valoriza.</p></div></li>
+      <li class="rv"><span class="p">Se você tem agência</span><div><h3>Você já tem a máquina.</h3><p>Falta previsibilidade: clientes novos todo mês, sem depender de indicação.</p></div></li>
+      <li class="rv"><span class="p">Se você já tem equipe</span><div><h3>Você já sabe operar.</h3><p>Falta processo: uma operação que funciona sem tudo passar por você.</p></div></li>
     </ul>
   </div>
 </section>
 
-<!-- MÉTODO -->
-<section class="sec metodo dark" id="metodo">
+<!-- O COMO + PLANO DE EXECUÇÃO -->
+<section class="sec metodo dark" id="plano">
   <div class="grain"></div>
   <div class="wrap">
     <div class="sec-head rv">
-      <span class="tag">O método</span>
-      <h2 class="h2">Do nicho ao contrato assinado, <span class="it">em cinco movimentos.</span></h2>
-      <p class="sub">Nas 12 semanas, a distância entre “eu sei o que fazer” e “eu executei” fica pequena.</p>
+      <span class="tag">O como</span>
+      <h2 class="h2">O que falta é o como. <span class="it">E o como é um plano de execução.</span></h2>
+      <p class="sub">Na teoria, você já sabe o que fazer. No Club, você recebe um plano de execução de 12 semanas e executa junto com o grupo, encontro a encontro. A distância entre “eu sei o que fazer” e “eu executei” fica pequena.</p>
     </div>
     <div class="steps">
-      <div class="step rv"><span class="dot">1</span><h3>Nicho, ICP e oferta</h3><p>Uma oferta que o cliente entende, valoriza e paga o ticket correto.</p></div>
-      <div class="step rv"><span class="dot">2</span><h3>Operação enxuta</h3><p>Processos que funcionam sem você no centro de tudo.</p></div>
-      <div class="step rv"><span class="dot">3</span><h3>Funil de reuniões</h3><p>Clientes todo mês fora da indicação, com prospecção ativa.</p></div>
-      <div class="step rv"><span class="dot">4</span><h3>Venda com processo</h3><p>Script de diagnóstico, proposta comercial e follow-up que fecha.</p></div>
-      <div class="step rv"><span class="dot">5</span><h3>IA na operação</h3><p>Menos retrabalho pra escalar sem aumentar o time.</p></div>
+      <div class="step rv"><span class="dot">1</span><h3>Como definir nicho, ICP e oferta</h3><p>que o cliente entende, valoriza e paga o ticket correto.</p></div>
+      <div class="step rv"><span class="dot">2</span><h3>Como montar uma operação enxuta</h3><p>com processos que funcionam sem você no centro de tudo.</p></div>
+      <div class="step rv"><span class="dot">3</span><h3>Como gerar clientes todo mês fora da indicação</h3><p>com funil de reuniões previsíveis e prospecção ativa.</p></div>
+      <div class="step rv"><span class="dot">4</span><h3>Como vender com processo</h3><p>script de diagnóstico, proposta comercial e follow-up que fecha contrato.</p></div>
+      <div class="step rv"><span class="dot">5</span><h3>Como usar IA</h3><p>pra cortar retrabalho e escalar sem aumentar o time.</p></div>
+    </div>
+    <div class="plan rv">
+      <div class="plan-h"><h3>Seu plano de execução, <span class="it">semana a semana</span></h3><p>Cada fase tem entregas claras. Nos encontros em grupo, você mostra o que executou, ajusta o que travou e sai sabendo o próximo passo.</p></div>
+      <div class="plan-g">
+        <div class="ph"><span class="w">Semanas 1 a 3</span><h4>Nicho e oferta</h4><ul><li>Score de qualificação do nicho</li><li>ICP e promessa</li><li>Oferta por segmento</li></ul></div>
+        <div class="ph"><span class="w">Semanas 4 a 6</span><h4>Posicionamento e processos</h4><ul><li>Conteúdo e ads pro nicho</li><li>Esteira de produtos</li><li>Rotinas da operação</li></ul></div>
+        <div class="ph"><span class="w">Semanas 7 a 9</span><h4>Funil de reuniões</h4><ul><li>Prospecção ativa</li><li>Criativos e qualificação</li><li>Agenda previsível</li></ul></div>
+        <div class="ph"><span class="w">Semanas 10 a 12</span><h4>Vendas e escala</h4><ul><li>Script de diagnóstico</li><li>Proposta e follow-up</li><li>IA na operação</li></ul></div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- FORMATO -->
+<!-- COMO VAI FUNCIONAR -->
 <section class="sec" id="formato">
   <div class="wrap">
     <div class="sec-head center rv">
-      <span class="tag">Formato</span>
-      <h2 class="h2">Seis meses de Club, <span class="it">três formas de acompanhamento.</span></h2>
-      <p class="sub">O mesmo método que roda a Next Digital hoje, aplicado na sua agência.</p>
+      <span class="tag">Como vai funcionar</span>
+      <h2 class="h2">Como vai funcionar <span class="it">o Club?</span></h2>
+      <p class="sub">Não é curso. É ambiente: plano de execução, encontros ao vivo em grupo e comunidade trabalhando juntos por 6 meses.</p>
     </div>
     <div class="fmt">
-      <article class="fbox hi rv"><span class="tag">Implementação</span><span class="big">12<small>semanas</small></span><h3>Nicho, oferta e funil na sua agência</h3><p>Posicionamento, processos e prospecção implementados, da oferta ao primeiro cliente fora da indicação.</p></article>
-      <article class="fbox rv"><span class="tag">Individuais</span><span class="big">5<small>reuniões 1:1</small></span><h3>Seu caso, sem plateia</h3><p>Escolha e validação do nicho, oferta e plano de ação em cima dos números da sua agência.</p></article>
-      <article class="fbox rv"><span class="tag">Em grupo</span><span class="big">24<small>encontros</small></span><h3>Mentoria ao vivo com hot seats</h3><p>Com o Henrique e mais de 150 donos de agência. O problema de um vira aula pra todos.</p></article>
+      <article class="fbox hi rv"><span class="tag">Plano de execução</span><span class="big">12<small>semanas</small></span><h3>Do nicho ao contrato assinado</h3><p>Nicho, posicionamento, processos e prospecção, com entregas por fase: da oferta ao primeiro cliente fora da indicação.</p></article>
+      <article class="fbox rv"><span class="tag">Mentoria em grupo</span><span class="big">24<small>encontros</small></span><h3>Ao vivo com o Henrique</h3><p>Os encontros acompanham o plano: o que executar, o que ajustar e o que vem a seguir.</p></article>
+      <article class="fbox rv"><span class="tag">Hot seats + comunidade</span><span class="big">6<small>meses</small></span><h3>Seu problema vira a aula</h3><p>Hot seats e mais de 150 donos de agência executando junto com você, do começo ao fim.</p></article>
     </div>
     <div class="cron rv" id="cron">
-      <div class="cron-h"><h3>Como os 6 meses se distribuem</h3><p>As 12 primeiras semanas concentram a implementação e as 5 individuais. Os 24 encontros em grupo seguem até o fim.</p></div>
+      <div class="cron-h"><h3>Como os 6 meses se distribuem</h3><p>As 12 primeiras semanas concentram o plano de execução. Os 24 encontros em grupo e a comunidade seguem até o fim dos 6 meses.</p></div>
       <div class="tl-scroll"><div class="tl">
         <div class="tl-m"><span style="border:0"></span><span>Mês 1</span><span>Mês 2</span><span>Mês 3</span><span>Mês 4</span><span>Mês 5</span><span>Mês 6</span></div>
-        <div class="tl-r"><span>Implementação</span><div class="tl-t"><div class="tl-impl">12 semanas · nicho → contrato</div></div></div>
-        <div class="tl-r"><span>Individuais</span><div class="tl-t"><i class="tl-dot" style="left:calc(3px + (100% - 6px)*0.0192)">1</i><i class="tl-dot" style="left:calc(3px + (100% - 6px)*0.0962)">2</i><i class="tl-dot" style="left:calc(3px + (100% - 6px)*0.2115)">3</i><i class="tl-dot" style="left:calc(3px + (100% - 6px)*0.3269)">4</i><i class="tl-dot" style="left:calc(3px + (100% - 6px)*0.4423)">5</i></div></div>
-        <div class="tl-r"><span>Em grupo</span><div class="tl-t"><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.0192)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.0610)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.1028)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.1446)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.1865)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.2283)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.2701)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.3119)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.3537)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.3955)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.4373)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.4791)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.5209)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.5627)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.6045)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.6463)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.6881)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.7299)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.7717)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.8135)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.8554)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.8972)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.9390)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.9808)"></i></div></div>
-        <div class="tl-r"><span>Comunidade</span><div class="tl-t"><div class="tl-com">suporte e comunidade Club durante os 6 meses</div></div></div>
+        <div class="tl-r"><span>Plano de execução</span><div class="tl-t"><div class="tl-impl">12 semanas · nicho → contrato</div></div></div>
+        <div class="tl-r"><span>Encontros em grupo</span><div class="tl-t"><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.0192)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.0610)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.1028)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.1446)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.1865)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.2283)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.2701)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.3119)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.3537)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.3955)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.4373)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.4791)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.5209)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.5627)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.6045)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.6463)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.6881)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.7299)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.7717)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.8135)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.8554)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.8972)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.9390)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.9808)"></i></div></div>
+        <div class="tl-r"><span>Comunidade</span><div class="tl-t"><div class="tl-com">hot seats, suporte e comunidade Club durante os 6 meses</div></div></div>
       </div></div>
     </div>
+    <div class="cta-c rv"><a class="btn" href="#oferta">Quero minha vaga <span class="ar"><svg><use href="#arr"/></svg></span></a><span>6 meses de Club, com 12 semanas de plano de execução.</span></div>
   </div>
 </section>
 
@@ -479,28 +506,28 @@ h1,h2,h3{font-weight:500;letter-spacing:-.035em;line-height:1.04}
   <div class="wrap deliv">
     <div class="sec-head rv">
       <span class="tag">Entregáveis</span>
-      <h2 class="h2">O que entra <span class="it">junto com você.</span></h2>
-      <p class="sub">Tudo disponível durante os 6 meses de Club.</p>
+      <h2 class="h2">Tudo que vem junto <span class="it">com o Club.</span></h2>
+      <p class="sub">6 meses de acesso completo.</p>
     </div>
     <ul class="checks">
-      <li class="rv"><svg><use href="#chk"/></svg><div><b>24 encontros ao vivo</b><span>Estratégia e direcionamento nos gargalos reais.</span></div></li>
-      <li class="rv"><svg><use href="#chk"/></svg><div><b>5 reuniões com o Henrique</b><span>Diagnóstico, prioridades e destrave do seu caso.</span></div></li>
-      <li class="rv"><svg><use href="#chk"/></svg><div><b>Hot seats</b><span>Seu caso na mesa, com direcionamento prático.</span></div></li>
-      <li class="rv"><svg><use href="#chk"/></svg><div><b>Comunidade com +150 donos</b><span>Troca de processo e parcerias no mesmo nível.</span></div></li>
-      <li class="rv"><svg><use href="#chk"/></svg><div><b>8 módulos na plataforma</b><span>Aulas e encontros gravados no Circle.</span></div></li>
-      <li class="rv"><svg><use href="#chk"/></svg><div><b>Plano de implementação</b><span>Prioridades e trilha de conteúdo personalizada.</span></div></li>
-      <li class="rv"><svg><use href="#chk"/></svg><div><b>IA aplicada</b><span>Automação de processos e menos retrabalho.</span></div></li>
-      <li class="rv"><svg><use href="#chk"/></svg><div><b>Templates prontos</b><span>Contrato, fluxo de caixa, proposta, script e planejamento.</span></div></li>
+      <li class="rv"><svg><use href="#chk"/></svg><div><b>Plano de execução de 12 semanas</b><span>Fases, entregas e prioridades definidas pra sua agência.</span></div></li>
+      <li class="rv"><svg><use href="#chk"/></svg><div><b>24 encontros ao vivo em grupo</b><span>Estratégia, análise e direcionamento conectados aos gargalos reais.</span></div></li>
+      <li class="rv"><svg><use href="#chk"/></svg><div><b>Hot seats</b><span>Você coloca o caso na mesa e sai com direcionamento prático.</span></div></li>
+      <li class="rv"><svg><use href="#chk"/></svg><div><b>+150 donos de agência ativos</b><span>Networking, troca de processo e parcerias no mesmo nível.</span></div></li>
+      <li class="rv"><svg><use href="#chk"/></svg><div><b>8 módulos práticos</b><span>Aulas e encontros gravados na plataforma Circle.</span></div></li>
+      <li class="rv"><svg><use href="#chk"/></svg><div><b>Trilha de conteúdo personalizada</b><span>O que estudar em cada fase do plano.</span></div></li>
+      <li class="rv"><svg><use href="#chk"/></svg><div><b>IA dentro da sua agência</b><span>Automação de processos e menos retrabalho, sem aumentar o time.</span></div></li>
+      <li class="rv"><svg><use href="#chk"/></svg><div><b>Modelos prontos pra usar</b><span>Contrato, fluxo de caixa, proposta, script de diagnóstico e planejamento.</span></div></li>
     </ul>
   </div>
 </section>
 
-<!-- PROVA -->
+<!-- RESULTADOS -->
 <section class="sec prova" id="prova">
   <div class="wrap">
     <div class="sec-head rv">
       <span class="tag">Resultados</span>
-      <h2 class="h2">Quem já escolheu onde jogar <span class="it">está colhendo.</span></h2>
+      <h2 class="h2">Os resultados de quem <span class="it">já está dentro.</span></h2>
     </div>
     <div class="prova-grid">
       <div class="nums rv"><div class="grain"></div>
@@ -518,7 +545,7 @@ h1,h2,h3{font-weight:500;letter-spacing:-.035em;line-height:1.04}
         <div class="shot rv"><img src="assets/print-group-458-1.png" alt="Depoimento de contratos fechados" loading="lazy"></div>
       </div>
     </div>
-    <p class="close rv">A próxima agência <span class="it">nesse mural</span> pode ser a sua.</p>
+    <p class="close rv">O próximo aqui <span class="it">pode ser você.</span></p>
   </div>
 </section>
 
@@ -528,16 +555,16 @@ h1,h2,h3{font-weight:500;letter-spacing:-.035em;line-height:1.04}
     <div class="mentor rv">
       <div class="pic"><img src="assets/henrique.jpg" alt="Henrique Avila" loading="lazy"></div>
       <div class="txt">
-        <span class="tag">Quem conduz</span>
+        <span class="tag">Seu mentor</span>
         <h2>Henrique <span class="it">Avila</span></h2>
-        <div class="roles"><span>Estrategista digital há 7+ anos</span><span>Fundador da Next Digital</span><span>Fundador da Digitalize Educação</span></div>
-        <p>Transformou uma operação desorganizada em uma agência com mais de 50 clientes ativos e R$ 2 milhões por ano, com 7 pessoas na equipe. Desde 2022, leva esse método a donos de agência no Brasil e em mais de 8 países.</p>
-        <p style="color:var(--ink3)">O que ele ensina no Club é o que executa toda semana, com resultado mensurável.</p>
+        <div class="roles"><span>Estrategista digital há mais de 7 anos</span><span>Fundador da Next Digital</span><span>Fundador da Digitalize Educação</span></div>
+        <p>Fundou a Next Digital e transformou uma operação desorganizada em mais de 50 clientes ativos e R$ 2 milhões por ano, com 7 pessoas.</p>
+        <p style="color:var(--ink3)">Desde 2022, pela Digitalize Educação, foram mais de 300 empresas atendidas e 3.000 agências mentoradas no Brasil e em mais de 8 países. O que é ensinado na Digitalize não é o que foi lido em livro. É o que é executado toda semana, com resultado mensurável.</p>
         <div class="ms">
           <div><b>+50</b><span>clientes ativos</span></div>
-          <div><b>R$ 2 mi+</b><span>por ano</span></div>
-          <div><b>7</b><span>pessoas no time</span></div>
-          <div><b>+3.000</b><span>agências</span></div>
+          <div><b>R$ 2 mi+</b><span>de faturamento anual</span></div>
+          <div><b>7</b><span>pessoas na equipe</span></div>
+          <div><b>+3.000</b><span>agências mentoradas</span></div>
         </div>
       </div>
     </div>
@@ -549,9 +576,9 @@ h1,h2,h3{font-weight:500;letter-spacing:-.035em;line-height:1.04}
   <div class="grain"></div>
   <div class="wrap">
     <div class="sec-head center rv">
-      <span class="tag">Investimento</span>
-      <h2 class="h2">Menos do que um cliente pequeno <span class="it">paga por mês.</span></h2>
-      <p class="sub">E o preço de parar de operar no improviso, apagando incêndio e dependendo da sorte.</p>
+      <span class="tag">A oferta</span>
+      <h2 class="h2">Faça sua <span class="it">inscrição agora.</span></h2>
+      <p class="sub">Você investiria R$ 500 por mês pra ter uma agência que cresce sem depender de você? É menos do que um cliente pequeno paga por mês pra sua agência. E é o preço de parar de operar no improviso, apagando incêndio e dependendo da sorte.</p>
     </div>
     <div class="offer rv">
       <div class="l">
@@ -559,17 +586,17 @@ h1,h2,h3{font-weight:500;letter-spacing:-.035em;line-height:1.04}
         <span class="v">R$ 500</span>
         <span class="av">ou <b>R$ 4.500</b> à vista</span>
         <div style="height:28px"></div>
-        <a class="btn light" href="https://digitalizeacademy.com.br/club">Garantir minha vaga <span class="ar"><svg><use href="#arr"/></svg></span></a>
-        <p class="g">7 dias de garantia. Se não for pra você, devolvemos 100%.</p>
+        <a class="btn light" href="https://digitalizeacademy.com.br/club">Garantir minha vaga agora <span class="ar"><svg><use href="#arr"/></svg></span></a>
+        <p class="g">7 dias de garantia. Se decidir que não é pra você, a gente devolve 100% do valor.</p>
       </div>
       <div class="r">
         <h3>Está incluído</h3>
         <ul>
-          <li>Implementação guiada <b>12 semanas</b></li>
-          <li>Reuniões individuais com o Henrique <b>5</b></li>
+          <li>Plano de execução <b>12 semanas</b></li>
           <li>Encontros ao vivo em grupo <b>24</b></li>
-          <li>Acesso ao Club e à comunidade <b>6 meses</b></li>
+          <li>Hot seats e comunidade Club <b>6 meses</b></li>
           <li>Plataforma com 8 módulos <b>incluso</b></li>
+          <li>Trilha de conteúdo personalizada <b>incluso</b></li>
           <li>Templates e IA aplicada <b>incluso</b></li>
         </ul>
       </div>
@@ -582,11 +609,11 @@ h1,h2,h3{font-weight:500;letter-spacing:-.035em;line-height:1.04}
   <div class="wrap">
     <div class="sec-head center rv">
       <span class="tag">A decisão</span>
-      <h2 class="h2">Em 6 meses, <span class="it">qual agência vai ser a sua?</span></h2>
+      <h2 class="h2">O único risco que você corre é estar no mesmo lugar daqui a 6 meses, <span class="it">apagando incêndio e dependendo de indicação.</span></h2>
     </div>
     <div class="paths">
-      <article class="path rv"><span class="k">Caminho 1</span><h3>Continuar “fazendo de tudo”</h3><p>Operando no improviso, apagando incêndio, esperando a próxima indicação. E vendo outra agência ocupar o nicho que podia ser seu.</p></article>
-      <article class="path b rv"><span class="k">Caminho 2</span><h3>Escolher seu nicho e construir o sistema</h3><p>Oferta clara, funil de reuniões previsível, venda com processo e uma agência que cresce sem você no centro de tudo.</p><a class="btn light" href="https://digitalizeacademy.com.br/club">Escolher o caminho 2 <span class="ar"><svg><use href="#arr"/></svg></span></a></article>
+      <article class="path rv"><span class="k">Sem plano</span><h3>Continuar “fazendo de tudo”</h3><p>Operando no improviso, apagando incêndio e esperando a próxima indicação.</p></article>
+      <article class="path b rv"><span class="k">Com plano de execução</span><h3>Executar o plano com o Club</h3><p>12 semanas de plano, 24 encontros em grupo e uma agência nichada que cresce sem você no centro de tudo.</p><a class="btn light" href="https://digitalizeacademy.com.br/club">Dar o primeiro passo <span class="ar"><svg><use href="#arr"/></svg></span></a></article>
     </div>
   </div>
 </section>
@@ -604,7 +631,7 @@ h1,h2,h3{font-weight:500;letter-spacing:-.035em;line-height:1.04}
       <div class="q"><button type="button" aria-expanded="false">Minha agência depende de indicação. Vale a pena?<span class="pm"></span></button><div class="a"><div><p>Vale, e provavelmente é o seu maior ganho. É o problema central que a gente resolve: sair da indicação e da prospecção aleatória pra um funil de reuniões previsível, dentro de um nicho que você domina.</p></div></div></div>
       <div class="q"><button type="button" aria-expanded="false">E se eu escolher o nicho errado?<span class="pm"></span></button><div class="a"><div><p>A primeira frente é o score de qualificação: faturamento, urgência e maturidade comercial do nicho. Você não escolhe no achismo, e valida com o funil antes de virar a agência inteira.</p></div></div></div>
       <div class="q"><button type="button" aria-expanded="false">Preciso de faturamento mínimo?<span class="pm"></span></button><div class="a"><div><p>Não. Você pode operar sozinho, com poucos clientes ou com uma pequena equipe. O que importa é enxergar a agência como negócio e querer uma operação comercial organizada.</p></div></div></div>
-      <div class="q"><button type="button" aria-expanded="false">Como funcionam as reuniões?<span class="pm"></span></button><div class="a"><div><p>As 5 individuais acontecem nas 12 semanas de implementação, com a sua agência na mesa. Os 24 encontros em grupo são ao vivo ao longo dos 6 meses, com hot seats.</p></div></div></div>
+      <div class="q"><button type="button" aria-expanded="false">Como funcionam os encontros e o plano de execução?<span class="pm"></span></button><div class="a"><div><p>São 24 encontros ao vivo em grupo ao longo dos 6 meses. Nas primeiras 12 semanas, eles seguem o plano de execução: você mostra o que executou, ajusta o que travou e sai com o próximo passo. Nos hot seats, um membro coloca um problema real na mesa e todo mundo aprende junto.</p></div></div></div>
       <div class="q"><button type="button" aria-expanded="false">Dá pra parcelar?<span class="pm"></span></button><div class="a"><div><p>Sim. 10x de R$ 500, ou R$ 4.500 à vista.</p></div></div></div>
       <div class="q"><button type="button" aria-expanded="false">Existe garantia?<span class="pm"></span></button><div class="a"><div><p>Sim. Você tem 7 dias pra decidir se o Club é pra você. Se não for, devolvemos 100% do valor.</p></div></div></div>
     </div>
@@ -618,7 +645,7 @@ h1,h2,h3{font-weight:500;letter-spacing:-.035em;line-height:1.04}
   <div class="wrap">
     <div class="row">
       <span class="brand"><svg><use href="#d"/></svg>Club</span>
-      <a class="btn light" href="#oferta">Quero entrar no Club <span class="ar"><svg><use href="#arr"/></svg></span></a>
+      <a class="btn light" href="#oferta">Quero minha vaga <span class="ar"><svg><use href="#arr"/></svg></span></a>
     </div>
     <div class="legal"><span>© 2026 Digitalize Educação · Digitalize Club · Henrique Avila</span><span>Termos · Privacidade · Reembolso</span></div>
   </div>
