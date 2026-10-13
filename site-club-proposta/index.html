@@ -324,6 +324,18 @@ h1,h2,h3{font-weight:500;letter-spacing:-.035em;line-height:1.04}
 .step h3{font-size:18px}
 @media (max-width:1080px){.plan-g{grid-template-columns:1fr 1fr}}
 @media (max-width:720px){.plan-g{grid-template-columns:1fr}}
+
+.acomp{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.ac{padding:26px;border-radius:var(--r);background:linear-gradient(160deg,rgba(79,120,201,.22),rgba(19,33,59,.6));border:1px solid var(--wl);display:flex;flex-direction:column;gap:12px}
+.ac .n{font-family:var(--serif);font-style:italic;font-size:34px;line-height:1;color:var(--blue3)}
+.ac h3{font-size:22px;letter-spacing:-.025em}
+.ac p{font-size:15px;color:var(--wt)}
+.plan-g.j3{grid-template-columns:repeat(3,1fr)}
+.plan-g .d{font-size:14.5px;color:var(--wt2)}
+.plan .after{margin-top:20px;padding-top:18px;border-top:1px solid var(--wl);font-size:16px;color:var(--wt)}
+.plan .after .it{color:var(--blue3);font-size:1.15em}
+.tl-impl.alt{background:linear-gradient(90deg,#3A5A94,var(--blue2))}
+@media (max-width:1080px){.acomp,.plan-g.j3{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -351,7 +363,7 @@ h1,h2,h3{font-weight:500;letter-spacing:-.035em;line-height:1.04}
       <div class="hero-copy rv">
         <p class="eyebrow"><img src="assets/henrique-av.png" alt="">Digitalize Club · mentoria em grupo com Henrique Avila</p>
         <h1>Daqui a 6 meses, você vai lembrar que foi aqui que sua agência <span class="it">parou de depender de você.</span></h1>
-        <p class="lede">6 meses de Club, com 24 encontros ao vivo em grupo e um plano de execução de 12 semanas pra posicionar sua agência num nicho e ter clientes novos todo mês.</p>
+        <p class="lede">6 meses de Club, com 24 encontros ao vivo em grupo e 12 semanas de implementação com grupo individual, plano de execução e acompanhamento do próprio Henrique.</p>
         <div class="ctas">
           <a class="btn" href="#oferta">Quero minha vaga <span class="ar"><svg><use href="#arr"/></svg></span></a>
           <p class="price-hint"><b>10x de R$ 500</b>ou R$ 4.500 à vista</p>
@@ -447,30 +459,28 @@ h1,h2,h3{font-weight:500;letter-spacing:-.035em;line-height:1.04}
   </div>
 </section>
 
-<!-- O COMO + PLANO DE EXECUÇÃO -->
+<!-- O COMO + METODOLOGIA DE IMPLEMENTAÇÃO -->
 <section class="sec metodo dark" id="plano">
   <div class="grain"></div>
   <div class="wrap">
     <div class="sec-head rv">
       <span class="tag">O como</span>
-      <h2 class="h2">O que falta é o como. <span class="it">E o como é um plano de execução.</span></h2>
-      <p class="sub">Na teoria, você já sabe o que fazer. No Club, você recebe um plano de execução de 12 semanas e executa junto com o grupo, encontro a encontro. A distância entre “eu sei o que fazer” e “eu executei” fica pequena.</p>
+      <h2 class="h2">O que falta é o como. <span class="it">E o como é implementação.</span></h2>
+      <p class="sub">Nas 12 semanas de implementação, você não fica sozinho com uma aula gravada. Você tem um grupo individual da sua agência, um plano de execução feito pro seu cenário e o acompanhamento do próprio Henrique. Depois, segue evoluindo na mentoria em grupo do Club.</p>
     </div>
-    <div class="steps">
-      <div class="step rv"><span class="dot">1</span><h3>Como definir nicho, ICP e oferta</h3><p>que o cliente entende, valoriza e paga o ticket correto.</p></div>
-      <div class="step rv"><span class="dot">2</span><h3>Como montar uma operação enxuta</h3><p>com processos que funcionam sem você no centro de tudo.</p></div>
-      <div class="step rv"><span class="dot">3</span><h3>Como gerar clientes todo mês fora da indicação</h3><p>com funil de reuniões previsíveis e prospecção ativa.</p></div>
-      <div class="step rv"><span class="dot">4</span><h3>Como vender com processo</h3><p>script de diagnóstico, proposta comercial e follow-up que fecha contrato.</p></div>
-      <div class="step rv"><span class="dot">5</span><h3>Como usar IA</h3><p>pra cortar retrabalho e escalar sem aumentar o time.</p></div>
+    <div class="acomp">
+      <article class="ac rv"><span class="n">01</span><h3>Grupo individual da sua agência</h3><p>Um grupo exclusivo, só seu, durante as 12 semanas. Dúvidas, ajustes e decisões resolvidos no dia a dia, sem esperar o próximo encontro.</p></article>
+      <article class="ac rv"><span class="n">02</span><h3>Plano de execução</h3><p>Diagnóstico do seu cenário, leitura dos gargalos e definição das prioridades. Você sabe o que fazer, em que ordem e o que entregar em cada semana.</p></article>
+      <article class="ac rv"><span class="n">03</span><h3>Acompanhamento do Henrique</h3><p>O próprio Henrique acompanha a sua implementação: revisa o que foi executado, direciona o próximo passo e destrava o que estiver parado.</p></article>
     </div>
     <div class="plan rv">
-      <div class="plan-h"><h3>Seu plano de execução, <span class="it">semana a semana</span></h3><p>Cada fase tem entregas claras. Nos encontros em grupo, você mostra o que executou, ajusta o que travou e sai sabendo o próximo passo.</p></div>
-      <div class="plan-g">
-        <div class="ph"><span class="w">Semanas 1 a 3</span><h4>Nicho e oferta</h4><ul><li>Score de qualificação do nicho</li><li>ICP e promessa</li><li>Oferta por segmento</li></ul></div>
-        <div class="ph"><span class="w">Semanas 4 a 6</span><h4>Posicionamento e processos</h4><ul><li>Conteúdo e ads pro nicho</li><li>Esteira de produtos</li><li>Rotinas da operação</li></ul></div>
-        <div class="ph"><span class="w">Semanas 7 a 9</span><h4>Funil de reuniões</h4><ul><li>Prospecção ativa</li><li>Criativos e qualificação</li><li>Agenda previsível</li></ul></div>
-        <div class="ph"><span class="w">Semanas 10 a 12</span><h4>Vendas e escala</h4><ul><li>Script de diagnóstico</li><li>Proposta e follow-up</li><li>IA na operação</li></ul></div>
+      <div class="plan-h"><h3>Metodologia de implementação: <span class="it">3 jornadas em 12 semanas</span></h3><p>Marketing, vendas e operação construídos como um único sistema, em que cada etapa alimenta a próxima.</p></div>
+      <div class="plan-g j3">
+        <div class="ph"><span class="w">Jornada 01</span><h4>Posicionamento e geração de demanda</h4><p class="d">Como sua agência ganha atenção, constrói autoridade no nicho e gera novas oportunidades.</p><ul><li>Oferta e posicionamento no nicho</li><li>Estratégia de conteúdo por estágio do funil</li><li>Processo de criação e roteiros de reels e stories</li><li>Conteúdo + ads pra distribuir a mensagem</li></ul></div>
+        <div class="ph"><span class="w">Jornada 02</span><h4>Funil e vendas</h4><p class="d">Interesse vira jornada comercial clara, da chegada do lead até o fechamento.</p><ul><li>Funil de reuniões previsíveis</li><li>Sistema de criativos pra gerar leads e reuniões</li><li>Qualificação e SLA</li><li>Estrutura comercial: pitch, proposta, metas, follow-up e controle do funil</li></ul></div>
+        <div class="ph"><span class="w">Jornada 03</span><h4>Processos e operação</h4><p class="d">A estrutura pra sua agência crescer sem você empurrando cada etapa.</p><ul><li>Fluxos internos e responsabilidades</li><li>Rotinas eficientes</li><li>Controle de qualidade</li><li>Playbooks, reunião de resultado e modelos editáveis</li></ul></div>
       </div>
+      <div class="after"><span class="it">E a implementação não termina aqui.</span> Depois das 12 semanas, você continua no Club até completar os 6 meses, com encontros ao vivo em grupo, hot seats e comunidade.</div>
     </div>
   </div>
 </section>
@@ -484,7 +494,7 @@ h1,h2,h3{font-weight:500;letter-spacing:-.035em;line-height:1.04}
       <p class="sub">Não é curso. É ambiente: plano de execução, encontros ao vivo em grupo e comunidade trabalhando juntos por 6 meses.</p>
     </div>
     <div class="fmt">
-      <article class="fbox hi rv"><span class="tag">Plano de execução</span><span class="big">12<small>semanas</small></span><h3>Do nicho ao contrato assinado</h3><p>Nicho, posicionamento, processos e prospecção, com entregas por fase: da oferta ao primeiro cliente fora da indicação.</p></article>
+      <article class="fbox hi rv"><span class="tag">Implementação</span><span class="big">12<small>semanas</small></span><h3>Grupo individual + plano de execução</h3><p>As 3 jornadas implementadas na sua agência, com grupo exclusivo e acompanhamento do próprio Henrique.</p></article>
       <article class="fbox rv"><span class="tag">Mentoria em grupo</span><span class="big">24<small>encontros</small></span><h3>Ao vivo com o Henrique</h3><p>Os encontros acompanham o plano: o que executar, o que ajustar e o que vem a seguir.</p></article>
       <article class="fbox rv"><span class="tag">Hot seats + comunidade</span><span class="big">6<small>meses</small></span><h3>Seu problema vira a aula</h3><p>Hot seats e mais de 150 donos de agência executando junto com você, do começo ao fim.</p></article>
     </div>
@@ -492,7 +502,8 @@ h1,h2,h3{font-weight:500;letter-spacing:-.035em;line-height:1.04}
       <div class="cron-h"><h3>Como os 6 meses se distribuem</h3><p>As 12 primeiras semanas concentram o plano de execução. Os 24 encontros em grupo e a comunidade seguem até o fim dos 6 meses.</p></div>
       <div class="tl-scroll"><div class="tl">
         <div class="tl-m"><span style="border:0"></span><span>Mês 1</span><span>Mês 2</span><span>Mês 3</span><span>Mês 4</span><span>Mês 5</span><span>Mês 6</span></div>
-        <div class="tl-r"><span>Plano de execução</span><div class="tl-t"><div class="tl-impl">12 semanas · nicho → contrato</div></div></div>
+        <div class="tl-r"><span>Implementação</span><div class="tl-t"><div class="tl-impl">12 semanas · 3 jornadas + plano de execução</div></div></div>
+        <div class="tl-r"><span>Grupo individual</span><div class="tl-t"><div class="tl-impl alt">acompanhamento do Henrique nas 12 semanas</div></div></div>
         <div class="tl-r"><span>Encontros em grupo</span><div class="tl-t"><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.0192)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.0610)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.1028)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.1446)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.1865)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.2283)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.2701)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.3119)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.3537)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.3955)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.4373)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.4791)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.5209)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.5627)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.6045)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.6463)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.6881)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.7299)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.7717)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.8135)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.8554)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.8972)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.9390)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.9808)"></i></div></div>
         <div class="tl-r"><span>Comunidade</span><div class="tl-t"><div class="tl-com">hot seats, suporte e comunidade Club durante os 6 meses</div></div></div>
       </div></div>
@@ -510,12 +521,12 @@ h1,h2,h3{font-weight:500;letter-spacing:-.035em;line-height:1.04}
       <p class="sub">6 meses de acesso completo.</p>
     </div>
     <ul class="checks">
-      <li class="rv"><svg><use href="#chk"/></svg><div><b>Plano de execução de 12 semanas</b><span>Fases, entregas e prioridades definidas pra sua agência.</span></div></li>
+      <li class="rv"><svg><use href="#chk"/></svg><div><b>Implementação de 12 semanas</b><span>Diagnóstico, plano de execução e as 3 jornadas na sua agência.</span></div></li>
+      <li class="rv"><svg><use href="#chk"/></svg><div><b>Grupo individual com o Henrique</b><span>Grupo exclusivo da sua agência e acompanhamento dele nas 12 semanas.</span></div></li>
       <li class="rv"><svg><use href="#chk"/></svg><div><b>24 encontros ao vivo em grupo</b><span>Estratégia, análise e direcionamento conectados aos gargalos reais.</span></div></li>
       <li class="rv"><svg><use href="#chk"/></svg><div><b>Hot seats</b><span>Você coloca o caso na mesa e sai com direcionamento prático.</span></div></li>
       <li class="rv"><svg><use href="#chk"/></svg><div><b>+150 donos de agência ativos</b><span>Networking, troca de processo e parcerias no mesmo nível.</span></div></li>
       <li class="rv"><svg><use href="#chk"/></svg><div><b>8 módulos práticos</b><span>Aulas e encontros gravados na plataforma Circle.</span></div></li>
-      <li class="rv"><svg><use href="#chk"/></svg><div><b>Trilha de conteúdo personalizada</b><span>O que estudar em cada fase do plano.</span></div></li>
       <li class="rv"><svg><use href="#chk"/></svg><div><b>IA dentro da sua agência</b><span>Automação de processos e menos retrabalho, sem aumentar o time.</span></div></li>
       <li class="rv"><svg><use href="#chk"/></svg><div><b>Modelos prontos pra usar</b><span>Contrato, fluxo de caixa, proposta, script de diagnóstico e planejamento.</span></div></li>
     </ul>
@@ -592,7 +603,8 @@ h1,h2,h3{font-weight:500;letter-spacing:-.035em;line-height:1.04}
       <div class="r">
         <h3>Está incluído</h3>
         <ul>
-          <li>Plano de execução <b>12 semanas</b></li>
+          <li>Implementação com plano de execução <b>12 semanas</b></li>
+          <li>Grupo individual + acompanhamento do Henrique <b>12 semanas</b></li>
           <li>Encontros ao vivo em grupo <b>24</b></li>
           <li>Hot seats e comunidade Club <b>6 meses</b></li>
           <li>Plataforma com 8 módulos <b>incluso</b></li>
@@ -631,7 +643,7 @@ h1,h2,h3{font-weight:500;letter-spacing:-.035em;line-height:1.04}
       <div class="q"><button type="button" aria-expanded="false">Minha agência depende de indicação. Vale a pena?<span class="pm"></span></button><div class="a"><div><p>Vale, e provavelmente é o seu maior ganho. É o problema central que a gente resolve: sair da indicação e da prospecção aleatória pra um funil de reuniões previsível, dentro de um nicho que você domina.</p></div></div></div>
       <div class="q"><button type="button" aria-expanded="false">E se eu escolher o nicho errado?<span class="pm"></span></button><div class="a"><div><p>A primeira frente é o score de qualificação: faturamento, urgência e maturidade comercial do nicho. Você não escolhe no achismo, e valida com o funil antes de virar a agência inteira.</p></div></div></div>
       <div class="q"><button type="button" aria-expanded="false">Preciso de faturamento mínimo?<span class="pm"></span></button><div class="a"><div><p>Não. Você pode operar sozinho, com poucos clientes ou com uma pequena equipe. O que importa é enxergar a agência como negócio e querer uma operação comercial organizada.</p></div></div></div>
-      <div class="q"><button type="button" aria-expanded="false">Como funcionam os encontros e o plano de execução?<span class="pm"></span></button><div class="a"><div><p>São 24 encontros ao vivo em grupo ao longo dos 6 meses. Nas primeiras 12 semanas, eles seguem o plano de execução: você mostra o que executou, ajusta o que travou e sai com o próximo passo. Nos hot seats, um membro coloca um problema real na mesa e todo mundo aprende junto.</p></div></div></div>
+      <div class="q"><button type="button" aria-expanded="false">Como funciona o acompanhamento nas 12 semanas?<span class="pm"></span></button><div class="a"><div><p>Nas 12 semanas de implementação, você tem um grupo individual da sua agência, um plano de execução pro seu cenário e o acompanhamento do próprio Henrique. Em paralelo, e até completar 6 meses, acontecem os 24 encontros ao vivo em grupo do Club, com hot seats e comunidade. Não há calls individuais: o acompanhamento individual acontece no grupo exclusivo.</p></div></div></div>
       <div class="q"><button type="button" aria-expanded="false">Dá pra parcelar?<span class="pm"></span></button><div class="a"><div><p>Sim. 10x de R$ 500, ou R$ 4.500 à vista.</p></div></div></div>
       <div class="q"><button type="button" aria-expanded="false">Existe garantia?<span class="pm"></span></button><div class="a"><div><p>Sim. Você tem 7 dias pra decidir se o Club é pra você. Se não for, devolvemos 100% do valor.</p></div></div></div>
     </div>
