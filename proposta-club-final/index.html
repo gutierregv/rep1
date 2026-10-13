@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1440">
+<title>Proposta Digitalize Club</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+/* Proposta Digitalize Club · slides 1440×810 · mesma identidade do site (azuis suaves, fosco) */
+:root{
+  --navy:#0C1526;--navy2:#13213B;--deep:#1B2E52;
+  --blue:#4F78C9;--blue2:#7C9BD6;--blue3:#B8CAEE;
+  --ice:#EEF2FA;--ice2:#F6F8FC;--paper:#FFFFFF;
+  --ink:#121A2C;--ink2:#34425E;--ink3:#5E6A84;--ink4:#8590A8;
+  --line:rgba(18,26,44,.10);--line2:rgba(18,26,44,.18);
+  --wl:rgba(255,255,255,.12);--wt:rgba(255,255,255,.74);--wt2:rgba(255,255,255,.5);
+  --sans:"DM Sans","Helvetica Neue",Arial,sans-serif;--serif:"Instrument Serif",Georgia,serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#d7dde8}
+body{font-family:var(--sans);color:var(--ink);-webkit-font-smoothing:antialiased;display:flex;flex-direction:column;align-items:center;gap:24px;padding:24px 0}
+@media print{.grain{display:none}html,body{background:none;padding:0;margin:0;gap:0;display:block;width:1440px}@page{size:1440px 810px;margin:0}}
+img,svg{display:block;max-width:100%}
+.sl{position:relative;width:1440px;height:810px;overflow:hidden;flex:none;background:var(--paper);padding:64px 80px;display:flex;flex-direction:column;break-after:page;page-break-after:always}
+.sl.ice{background:var(--ice)}
+.sl.dark{background:var(--navy);color:#fff}
+.sl.dark::before{content:"";position:absolute;inset:0;background:radial-gradient(55% 70% at 100% 0%,rgba(79,120,201,.32),transparent 70%),radial-gradient(45% 60% at 0% 100%,rgba(124,155,214,.16),transparent 70%)}
+.sl>*{position:relative}
+.grain{position:absolute!important;inset:0;pointer-events:none;opacity:.07;mix-blend-mode:overlay;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+.it{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.01em}
+.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:36px}
+.tag{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
+.tag::before{content:"";width:18px;height:2px;border-radius:2px;background:currentColor}
+.dark .tag{color:var(--blue3)}
+.pg{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--ink4);letter-spacing:.06em}
+.pg svg{width:18px;height:18px;color:var(--blue2)}
+.dark .pg{color:var(--wt2)}
+h1,h2,h3{font-weight:500;letter-spacing:-.035em;line-height:1.04}
+.h2{font-size:54px;text-wrap:balance}
+.h2 .it{font-size:1.06em}
+.dark .h2 .it{color:var(--blue3)}
+.sub{font-size:19px;color:var(--ink3);line-height:1.5;max-width:62ch}
+.dark .sub{color:var(--wt)}
+
+/* capa */
+.cover{padding:0;display:grid;grid-template-columns:1fr 520px}
+.cover .l{padding:64px 80px;display:flex;flex-direction:column}
+.cover .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:24px;letter-spacing:-.04em}
+.cover .brand svg{width:28px;height:28px;color:var(--blue2)}
+.cover .brand small{font-weight:400;font-size:14px;letter-spacing:0;color:var(--wt2);padding-left:12px;border-left:1px solid var(--wl)}
+.cover .k{margin-top:auto;font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--blue3)}
+.cover h1{margin-top:18px;font-size:66px;line-height:1;letter-spacing:-.045em}
+.cover h1 .it{color:var(--blue3)}
+.cover .lede{margin-top:24px;font-size:19px;line-height:1.5;color:var(--wt);max-width:52ch}
+.cover .foot{margin-top:40px;display:flex;gap:28px;font-size:14px;color:var(--wt2)}
+.cover .foot b{display:block;color:#fff;font-weight:500;font-size:16px}
+.cover .r{position:relative;overflow:hidden}
+.cover .r img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 18%;filter:saturate(.85)}
+.cover .r::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--navy) 0%,rgba(12,21,38,0) 30%),linear-gradient(0deg,rgba(12,21,38,.7),transparent 40%)}
+.cover .cap{position:absolute;left:40px;bottom:40px;z-index:2}
+.cover .cap b{display:block;font-weight:500;font-size:22px}
+.cover .cap span{font-size:14px;color:var(--wt2)}
+
+/* números */
+.nums4{margin-top:auto;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line2);border-bottom:1px solid var(--line2)}
+.nums4>div{padding:34px 26px;border-left:1px solid var(--line2)}
+.nums4>div:first-child{border-left:0;padding-left:0}
+.nums4 b{display:block;font-weight:400;font-size:52px;letter-spacing:-.05em;line-height:1}
+.nums4 span{display:block;margin-top:12px;font-size:15px;color:var(--ink3);max-width:24ch}
+.note{margin-top:26px;font-size:16px;color:var(--ink3)}
+
+/* cards */
+.cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px}
+.dcard{padding:28px;border-radius:22px;background:var(--ice2);border:1px solid var(--line);display:flex;flex-direction:column;gap:12px;min-height:220px}
+.dcard .n{font-family:var(--serif);font-style:italic;font-size:42px;line-height:1;color:var(--blue2)}
+.dcard h3{font-size:22px;margin-top:auto}
+.dcard p{font-size:15.5px;color:var(--ink3)}
+.turn{margin-top:16px;padding:26px 32px;border-radius:22px;background:var(--navy);color:#fff;font-size:26px;letter-spacing:-.03em;line-height:1.25;overflow:hidden}
+.turn .it{color:var(--blue3)}
+
+/* tese */
+.tese-g{display:grid;grid-template-columns:520px 1fr;gap:56px;align-items:end}
+.tese-g p{font-size:16.5px;color:var(--ink2);line-height:1.55}
+.tese-g p+p{margin-top:10px;color:var(--ink3);font-size:15.5px}
+.chart{margin-top:28px;border-radius:26px;background:var(--paper);border:1px solid var(--line);padding:22px 30px}
+.chart .lbl{font:500 13px var(--sans);fill:var(--ink3);letter-spacing:.08em}
+.chart .ann{font:400 15px var(--sans);fill:var(--ink2)}
+.chart .ann-b{font:500 17px var(--sans);fill:var(--ink)}
+.reasons{margin-top:14px;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.reason{padding:18px 20px;border-radius:18px;background:var(--paper);border:1px solid var(--line);font-size:14.5px;color:var(--ink2);line-height:1.45}
+.reason b{font-weight:500;color:var(--ink)}
+
+/* pra quem */
+.who{display:grid;grid-template-columns:440px 1fr;gap:64px;flex:1}
+.who ul{list-style:none;border-top:1px solid var(--line2);align-self:center}
+.who li{display:grid;grid-template-columns:200px 1fr;gap:24px;padding:24px 0;border-bottom:1px solid var(--line2)}
+.who li .p{font-size:14px;font-weight:500;color:var(--blue)}
+.who li h3{font-size:22px;margin-bottom:6px}
+.who li p{color:var(--ink3);font-size:15.5px}
+
+/* como */
+.acomp{margin-top:34px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.ac{padding:26px;border-radius:22px;background:linear-gradient(160deg,rgba(79,120,201,.24),rgba(19,33,59,.7));border:1px solid var(--wl);display:flex;flex-direction:column;gap:12px;min-height:280px}
+.ac .n{font-family:var(--serif);font-style:italic;font-size:38px;line-height:1;color:var(--blue3)}
+.ac h3{font-size:22px;margin-top:auto}
+.ac p{font-size:15px;color:var(--wt)}
+
+/* jornadas */
+.j3{margin-top:30px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px;flex:1}
+.jr{padding:26px;border-radius:22px;background:rgba(19,33,59,.75);border:1px solid var(--wl);display:flex;flex-direction:column;gap:12px}
+.jr .w{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--blue3)}
+.jr h3{font-size:24px}
+.jr .d{font-size:15px;color:var(--wt2)}
+.jr ul{list-style:none;display:flex;flex-direction:column;gap:9px;margin-top:6px}
+.jr li{font-size:15.5px;color:var(--wt);padding-left:18px;position:relative}
+.jr li::before{content:"";position:absolute;left:0;top:.6em;width:7px;height:7px;border-radius:50%;background:var(--blue2)}
+.after{margin-top:16px;padding:18px 24px;border-radius:16px;border:1px solid var(--wl);font-size:17px;color:var(--wt)}
+.after .it{color:var(--blue3);font-size:1.18em}
+
+/* formato */
+.fmt{margin-top:30px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.fbox{padding:26px 28px;border-radius:22px;border:1px solid var(--line);background:var(--paper);display:flex;flex-direction:column;gap:8px}
+.fbox.hi{background:linear-gradient(160deg,var(--ice) 0%,#DCE6F7 100%)}
+.fbox .big{font-size:72px;font-weight:400;letter-spacing:-.06em;line-height:1}
+.fbox .big small{font-size:.3em;letter-spacing:-.02em;margin-left:6px;color:var(--ink3)}
+.fbox h3{font-size:20px;margin-top:10px}
+.fbox p{font-size:14.5px;color:var(--ink3)}
+
+/* cronograma */
+.cron{margin-top:auto;padding:24px 28px;border-radius:22px;border:1px solid var(--line);background:var(--ice2)}
+.tl{display:flex;flex-direction:column;gap:10px}
+.tl-m{display:grid;grid-template-columns:180px repeat(6,1fr);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink4)}
+.tl-m span{padding-left:10px;border-left:1px solid var(--line2)}
+.tl-r{display:grid;grid-template-columns:180px 1fr;align-items:center}
+.tl-r>span{font-size:14.5px;font-weight:500;color:var(--ink2)}
+.tl-t{position:relative;height:44px;border-radius:12px;background:var(--paper);border:1px solid var(--line)}
+.tl-impl{position:absolute;left:3px;top:3px;bottom:3px;width:calc((100% - 6px)*12/26);border-radius:9px;background:linear-gradient(90deg,var(--deep),var(--blue));color:#fff;font-size:13.5px;display:flex;align-items:center;padding-left:14px;white-space:nowrap}
+.tl-impl.alt{background:linear-gradient(90deg,#3A5A94,var(--blue2))}
+.tl-com{position:absolute;inset:3px;border-radius:9px;background:var(--ice);font-size:13.5px;color:var(--ink3);display:flex;align-items:center;padding-left:14px}
+.tl-dot{position:absolute;top:50%;width:28px;height:28px;margin:-14px 0 0 -14px;border-radius:50%;background:var(--ink);color:#fff;font-size:11px;display:grid;place-items:center;font-style:normal}
+.tl-tick{position:absolute;top:50%;width:5px;height:20px;margin:-10px 0 0 -2.5px;border-radius:3px;background:var(--blue2)}
+
+/* entregáveis */
+.checks{margin-top:34px;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:0 48px}
+.checks li{display:grid;grid-template-columns:30px 1fr;gap:14px;padding:18px 0;border-top:1px solid var(--line)}
+.checks li svg{width:24px;height:24px;color:var(--blue);margin-top:2px}
+.checks b{display:block;font-weight:500;font-size:18px;letter-spacing:-.02em}
+.checks span{font-size:15px;color:var(--ink3)}
+
+/* resultados */
+.prova{margin-top:30px;display:grid;grid-template-columns:400px 1fr;gap:16px;flex:1;min-height:0}
+.pnums{border-radius:22px;background:var(--navy);color:#fff;padding:6px 28px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-around}
+.pnums div{padding:14px 0;border-bottom:1px solid var(--wl)}
+.pnums div:last-child{border-bottom:0}
+.pnums b{display:block;font-weight:400;font-size:42px;letter-spacing:-.05em;line-height:1}
+.pnums span{font-size:14px;color:var(--wt2)}
+.shots{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:14px;min-height:0}
+.shot{border-radius:18px;background:#152038;display:grid;place-items:center;padding:14px;overflow:hidden}
+.shot img{max-height:100%;max-width:100%;border-radius:8px}
+
+/* mentor */
+.mentor{padding:0;display:grid;grid-template-columns:560px 1fr}
+.mentor .pic{position:relative;background:var(--deep)}
+.mentor .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 18%;filter:saturate(.85)}
+.mentor .txt{padding:64px 72px;display:flex;flex-direction:column;gap:18px;justify-content:center}
+.mentor h2{font-size:60px}
+.roles{display:flex;flex-wrap:wrap;gap:8px}
+.roles span{padding:8px 13px;border-radius:10px;background:var(--ice2);border:1px solid var(--line);font-size:14px;color:var(--ink2)}
+.mentor p{color:var(--ink2);font-size:17.5px;line-height:1.5}
+.ms{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:10px}
+.ms div{padding:16px;border-radius:14px;background:var(--ice2);border:1px solid var(--line)}
+.ms b{display:block;font-weight:500;font-size:28px;letter-spacing:-.04em}
+.ms span{font-size:13px;color:var(--ink3)}
+
+/* investimento */
+.offer{margin:34px auto 0;width:1000px;border-radius:30px;background:rgba(255,255,255,.04);border:1px solid var(--wl);display:grid;grid-template-columns:1fr 1fr;overflow:hidden}
+.offer .l{padding:44px;border-right:1px solid var(--wl);display:flex;flex-direction:column;gap:8px}
+.offer .l .x{font-size:20px;color:var(--wt)}
+.offer .l .v{font-size:112px;font-weight:400;letter-spacing:-.06em;line-height:.95}
+.offer .l .av{font-size:18px;color:var(--wt)}
+.offer .l .av b{color:#fff;font-weight:500}
+.offer .l .tot{font-size:14px;color:var(--wt2)}
+.offer .l .g{margin-top:auto;padding-top:20px;border-top:1px solid var(--wl);font-size:14.5px;color:var(--wt2)}
+.offer .r{padding:40px 44px}
+.offer .r h3{font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--blue3);font-weight:500;margin-bottom:8px}
+.offer .r ul{list-style:none}
+.offer .r li{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--wl);font-size:15.5px;color:var(--wt)}
+.offer .r li b{color:#fff;font-weight:500;white-space:nowrap}
+
+/* fechamento */
+.paths{margin-top:34px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.path{padding:32px;border-radius:22px;border:1px solid var(--line);display:flex;flex-direction:column;gap:14px;min-height:230px}
+.path .k{font-size:13px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;color:var(--ink4)}
+.path h3{font-size:30px}
+.path p{color:var(--ink3);font-size:16.5px}
+.path.b{background:linear-gradient(160deg,var(--deep),var(--navy));color:#fff;border-color:transparent}
+.path.b .k{color:var(--blue3)}.path.b p{color:var(--wt)}
+.steps{margin-top:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.steps div{padding:18px 22px;border-radius:16px;background:var(--ice2);border:1px solid var(--line);display:flex;gap:14px;align-items:baseline}
+.steps .n{font-family:var(--serif);font-style:italic;font-size:30px;color:var(--blue)}
+.steps p{font-size:15.5px;color:var(--ink2)}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="d" viewBox="0 0 774 780"><path fill="currentColor" d="M0 253H262V528H0Z"/><path fill="currentColor" fill-rule="evenodd" d="M262 0H384A390 390 0 0 1 384 780H262Z M262 253H539V528H262Z"/></symbol>
+  <symbol id="chk" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M7 12.5l3.2 3L17 9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</defs></svg>
+
+<!-- 01 CAPA -->
+<section class="sl dark cover">
+  <div class="grain"></div>
+  <div class="l">
+    <span class="brand"><svg><use href="#d"/></svg>Club<small>Proposta comercial · Digitalize</small></span>
+    <span class="k">Mentoria em grupo com Henrique Avila</span>
+    <h1>Daqui a 6 meses, você vai lembrar que foi aqui que sua agência <span class="it">parou de depender de você.</span></h1>
+    <p class="lede">6 meses de Club, com 24 encontros ao vivo em grupo e 12 semanas de implementação com grupo individual, plano de execução, 2 calls e acompanhamento do próprio Henrique.</p>
+    <div class="foot"><span><b>12 semanas</b>de implementação</span><span><b>24 encontros</b>em grupo</span><span><b>6 meses</b>de Club</span></div>
+  </div>
+  <div class="r"><img src="assets/henrique.jpg" alt="Henrique Avila"><div class="cap"><b>Henrique Avila</b><span>Fundador da Next Digital e da Digitalize</span></div></div>
+</section>
+
+<!-- 02 A PROPOSTA -->
+<section class="sl">
+  <div class="top"><span class="tag">A proposta</span><span class="pg"><svg><use href="#d"/></svg>02</span></div>
+  <h2 class="h2" style="font-size:66px;max-width:15ch">O que está na mesa, <span class="it">em quatro números.</span></h2>
+  <div class="nums4">
+    <div><b>12 semanas</b><span>de implementação com grupo individual e plano de execução.</span></div>
+    <div><b>2 calls</b><span>com o Henrique: diagnóstico e plano, depois revisão da execução.</span></div>
+    <div><b>24 encontros</b><span>ao vivo em grupo, com hot seats e mais de 150 donos de agência.</span></div>
+    <div><b>6 meses</b><span>de Club: comunidade, suporte e acompanhamento do começo ao fim.</span></div>
+  </div>
+  <p class="note">Investimento: <b>10x de R$ 290</b> ou <b>R$ 2.500</b> à vista.</p>
+</section>
+
+<!-- 03 O CLUB -->
+<section class="sl">
+  <div class="top"><span class="tag">O Club</span><span class="pg"><svg><use href="#d"/></svg>03</span></div>
+  <h2 class="h2">Essa não é mais uma <span class="it">mentoria pra agência.</span></h2>
+  <p class="sub" style="margin-top:16px">Você já conhece esse mercado por dentro. Já comprou curso de tráfego, de social media, de vendas. Já fechou cliente, já montou equipe, já entregou resultado pros outros.</p>
+  <div class="cards3">
+    <article class="dcard"><span class="n">01</span><h3>E você aprendeu. Executou.</h3><p>Trabalhou muito.</p></article>
+    <article class="dcard"><span class="n">02</span><h3>Só que o lucro não ficou na agência.</h3><p>Ficou no cliente que cresceu, no desconto que você deu pra fechar, no mês que você passou apagando incêndio.</p></article>
+    <article class="dcard"><span class="n">03</span><h3>A culpa não é sua.</h3><p>Você aprendeu no modelo do “faço de tudo”, da indicação e do dono que gera, vende, entrega e cobra sozinho. Esse modelo trava.</p></article>
+  </div>
+  <div class="turn"><div class="grain"></div>E existe outro jeito: a <span class="it">agência nichada</span>, com sistema, que cresce sem você no centro de tudo.</div>
+</section>
+
+<!-- 04 A OPORTUNIDADE -->
+<section class="sl ice">
+  <div class="top"><span class="tag">A oportunidade</span><span class="pg"><svg><use href="#d"/></svg>04</span></div>
+  <div class="tese-g">
+    <h2 class="h2" style="font-size:48px">A oportunidade que está na sua frente: <span class="it">a agência nichada, na cauda longa.</span></h2>
+    <div><p>Em 2004, Chris Anderson publicou na Wired a tese da Cauda Longa: quando o custo de chegar no cliente despenca, o dinheiro sai dos poucos “hits” e se espalha por milhares de nichos. Somados, maiores que a cabeça.</p><p>A Amazon provou com livros, a Netflix com filmes, o Spotify com música. Com agências é igual: o cliente procura quem já resolveu o problema dele, no mercado dele.</p></div>
+  </div>
+  <div class="chart">
+    <svg viewBox="0 0 1220 250" role="img" aria-label="Curva da cauda longa">
+      <defs><linearGradient id="tg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7C9BD6"/><stop offset="1" stop-color="#4F78C9" stop-opacity=".35"/></linearGradient></defs>
+      <path d="M40 210V20C70 100 110 150 220 172C380 200 700 206 1180 208V210Z" fill="rgba(18,26,44,.05)"/>
+      <path d="M220 210V172C380 200 700 206 1180 208V210Z" fill="url(#tg)"/>
+      <path d="M40 20C70 100 110 150 220 172C380 200 700 206 1180 208" fill="none" stroke="#121A2C" stroke-width="2"/>
+      <path d="M220 160V226" stroke="rgba(18,26,44,.35)" stroke-dasharray="4 5"/>
+      <path d="M40 210H1180" stroke="rgba(18,26,44,.25)"/>
+      <text x="40" y="244" class="lbl">CABEÇA</text><text x="236" y="244" class="lbl">CAUDA LONGA</text>
+      <g transform="translate(96 54)"><circle r="5" fill="#121A2C"/><text x="18" y="-4" class="ann-b">Briga por preço</text><text x="18" y="17" class="ann">mil agências “fazendo de tudo”</text></g>
+      <g transform="translate(660 196)"><circle r="5" fill="#4F78C9"/><text x="18" y="-50" class="ann-b">Briga por especialidade</text><text x="18" y="-28" class="ann">centenas de nichos sem nenhuma agência especialista</text></g>
+    </svg>
+  </div>
+  <div class="reasons">
+    <div class="reason">Anunciar pra “empresas” ou pra “clínicas odontológicas em Campinas” custa o mesmo clique. <b>A barreira caiu a quase zero.</b></div>
+    <div class="reason">O cliente procura especialista. <b>A agência que “faz de tudo” ficou invisível.</b></div>
+    <div class="reason"><b>20 a 30 clientes de ticket certo</b> fazem uma agência de R$ 50 mil por mês.</div>
+    <div class="reason"><b>83,6% das agências</b> ainda só conseguem cliente por indicação (mLabs). Quem se posiciona primeiro leva o nicho.</div>
+  </div>
+</section>
+
+<!-- 05 PRA QUEM -->
+<section class="sl">
+  <div class="top"><span class="tag">Pra quem é</span><span class="pg"><svg><use href="#d"/></svg>05</span></div>
+  <div class="who">
+    <div style="align-self:center"><h2 class="h2">Você já tem metade <span class="it">do que precisa.</span></h2><p class="sub" style="margin-top:16px">Falta a outra metade: o nicho e o sistema.</p></div>
+    <ul>
+      <li><span class="p">Se você é gestor de tráfego</span><div><h3>Você já sabe gerar resultado.</h3><p>Falta parar de vender hora de gestão e vender o resultado, com ticket correto.</p></div></li>
+      <li><span class="p">Se você é social media</span><div><h3>Você já sabe produzir.</h3><p>Falta sair do “faço de tudo” e ter uma oferta clara, que o cliente valoriza.</p></div></li>
+      <li><span class="p">Se você tem agência</span><div><h3>Você já tem a máquina.</h3><p>Falta previsibilidade: clientes novos todo mês, sem depender de indicação.</p></div></li>
+      <li><span class="p">Se você já tem equipe</span><div><h3>Você já sabe operar.</h3><p>Falta processo: uma operação que funciona sem tudo passar por você.</p></div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 06 O COMO -->
+<section class="sl dark">
+  <div class="grain"></div>
+  <div class="top"><span class="tag">O como</span><span class="pg"><svg><use href="#d"/></svg>06</span></div>
+  <h2 class="h2">O que falta é o como. <span class="it">E o como é implementação.</span></h2>
+  <p class="sub" style="margin-top:16px">Nas 12 semanas, você não fica sozinho com uma aula gravada. Você tem acompanhamento próximo pra executar, e depois segue evoluindo na mentoria em grupo do Club.</p>
+  <div class="acomp">
+    <article class="ac"><span class="n">01</span><h3>Grupo individual da sua agência</h3><p>Um grupo exclusivo durante as 12 semanas. Dúvidas, ajustes e decisões resolvidos no dia a dia.</p></article>
+    <article class="ac"><span class="n">02</span><h3>Plano de execução</h3><p>Diagnóstico, gargalos e prioridades. Você sabe o que fazer, em que ordem e o que entregar em cada semana.</p></article>
+    <article class="ac"><span class="n">03</span><h3>2 calls com o Henrique</h3><p>Uma pra fechar o diagnóstico e o plano, outra pra revisar a execução e ajustar a rota.</p></article>
+    <article class="ac"><span class="n">04</span><h3>Acompanhamento do Henrique</h3><p>Ele revisa o que foi executado, direciona o próximo passo e destrava o que estiver parado.</p></article>
+  </div>
+</section>
+
+<!-- 07 METODOLOGIA -->
+<section class="sl dark">
+  <div class="grain"></div>
+  <div class="top"><span class="tag">Metodologia de implementação</span><span class="pg"><svg><use href="#d"/></svg>07</span></div>
+  <h2 class="h2" style="font-size:48px">3 jornadas em 12 semanas: <span class="it">marketing, vendas e operação como um só sistema.</span></h2>
+  <div class="j3">
+    <div class="jr"><span class="w">Jornada 01</span><h3>Posicionamento e geração de demanda</h3><p class="d">Como sua agência ganha atenção e autoridade no nicho.</p><ul><li>Oferta e posicionamento no nicho</li><li>Estratégia de conteúdo por estágio do funil</li><li>Processo de criação, reels e stories</li><li>Conteúdo + ads</li></ul></div>
+    <div class="jr"><span class="w">Jornada 02</span><h3>Funil e vendas</h3><p class="d">Da chegada do lead até o fechamento.</p><ul><li>Funil de reuniões previsíveis</li><li>Sistema de criativos</li><li>Qualificação e SLA</li><li>Pitch, proposta, metas e follow-up</li></ul></div>
+    <div class="jr"><span class="w">Jornada 03</span><h3>Processos e operação</h3><p class="d">Crescer sem você empurrando cada etapa.</p><ul><li>Fluxos internos e responsabilidades</li><li>Rotinas eficientes</li><li>Controle de qualidade</li><li>Playbooks e modelos editáveis</li></ul></div>
+  </div>
+  <div class="after"><span class="it">E a implementação não termina aqui.</span> Depois das 12 semanas, você continua no Club até completar os 6 meses, com encontros ao vivo, hot seats e comunidade.</div>
+</section>
+
+<!-- 08 COMO VAI FUNCIONAR -->
+<section class="sl">
+  <div class="top"><span class="tag">Como vai funcionar</span><span class="pg"><svg><use href="#d"/></svg>08</span></div>
+  <h2 class="h2" style="font-size:48px">Seis meses, <span class="it">semana a semana.</span></h2>
+  <div class="fmt">
+    <article class="fbox hi"><span class="tag">Implementação</span><span class="big">12<small>semanas</small></span><h3>Grupo individual, plano e 2 calls</h3><p>As 3 jornadas na sua agência, com acompanhamento do próprio Henrique.</p></article>
+    <article class="fbox"><span class="tag">Mentoria em grupo</span><span class="big">24<small>encontros</small></span><h3>Ao vivo com o Henrique</h3><p>O que executar, o que ajustar e o que vem a seguir.</p></article>
+    <article class="fbox"><span class="tag">Hot seats + comunidade</span><span class="big">6<small>meses</small></span><h3>Seu problema vira a aula</h3><p>Mais de 150 donos de agência executando junto com você.</p></article>
+  </div>
+  <div class="cron">
+    <div class="tl" id="tl">
+      <div class="tl-m"><span style="border:0"></span><span>Mês 1</span><span>Mês 2</span><span>Mês 3</span><span>Mês 4</span><span>Mês 5</span><span>Mês 6</span></div>
+      <div class="tl-r"><span>Implementação</span><div class="tl-t"><div class="tl-impl">12 semanas · 3 jornadas + plano de execução</div></div></div>
+      <div class="tl-r"><span>Grupo individual</span><div class="tl-t"><div class="tl-impl alt">acompanhamento do Henrique</div></div></div>
+      <div class="tl-r"><span>Calls com o Henrique</span><div class="tl-t" id="calls"></div></div>
+      <div class="tl-r"><span>Encontros em grupo</span><div class="tl-t" id="ticks"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 09 ENTREGÁVEIS -->
+<section class="sl">
+  <div class="top"><span class="tag">Entregáveis</span><span class="pg"><svg><use href="#d"/></svg>09</span></div>
+  <h2 class="h2">Tudo que vem junto <span class="it">com o Club.</span></h2>
+  <ul class="checks">
+    <li><svg><use href="#chk"/></svg><div><b>Implementação de 12 semanas</b><span>Diagnóstico, plano de execução e as 3 jornadas na sua agência.</span></div></li>
+    <li><svg><use href="#chk"/></svg><div><b>Grupo individual com o Henrique</b><span>Grupo exclusivo da sua agência e acompanhamento nas 12 semanas.</span></div></li>
+    <li><svg><use href="#chk"/></svg><div><b>2 calls com o Henrique</b><span>Diagnóstico e plano no início, revisão da execução no meio do caminho.</span></div></li>
+    <li><svg><use href="#chk"/></svg><div><b>24 encontros ao vivo em grupo</b><span>Estratégia e direcionamento nos gargalos reais.</span></div></li>
+    <li><svg><use href="#chk"/></svg><div><b>Hot seats</b><span>Seu caso na mesa, com direcionamento prático.</span></div></li>
+    <li><svg><use href="#chk"/></svg><div><b>+150 donos de agência ativos</b><span>Networking, troca de processo e parcerias.</span></div></li>
+    <li><svg><use href="#chk"/></svg><div><b>8 módulos práticos</b><span>Aulas e encontros gravados na plataforma Circle.</span></div></li>
+    <li><svg><use href="#chk"/></svg><div><b>Templates e IA aplicada</b><span>Contrato, fluxo de caixa, proposta, script e automações.</span></div></li>
+  </ul>
+</section>
+
+<!-- 10 RESULTADOS -->
+<section class="sl ice">
+  <div class="top"><span class="tag">Resultados</span><span class="pg"><svg><use href="#d"/></svg>10</span></div>
+  <h2 class="h2" style="font-size:48px">Os resultados de quem <span class="it">já está dentro.</span></h2>
+  <div class="prova">
+    <div class="pnums"><div class="grain"></div>
+      <div><b>+3.000</b><span>agências mentoradas, em mais de 8 países</span></div>
+      <div><b>R$ 2 mi</b><span>por ano na Next Digital, com 7 pessoas</span></div>
+      <div><b>+300</b><span>empresas atendidas com o método</span></div>
+      <div><b>+150</b><span>membros ativos no Club</span></div>
+    </div>
+    <div class="shots">
+      <div class="shot"><img src="assets/print-group-185.svg" alt=""></div>
+      <div class="shot"><img src="assets/print-group-186.svg" alt=""></div>
+      <div class="shot"><img src="assets/print-group-403-2.png" alt=""></div>
+      <div class="shot"><img src="assets/print-group-457-2.png" alt=""></div>
+    </div>
+  </div>
+</section>
+
+<!-- 11 MENTOR -->
+<section class="sl mentor">
+  <div class="pic"><img src="assets/henrique.jpg" alt="Henrique Avila"></div>
+  <div class="txt">
+    <span class="tag">Seu mentor</span>
+    <h2>Henrique <span class="it">Avila</span></h2>
+    <div class="roles"><span>Estrategista digital há 7+ anos</span><span>Fundador da Next Digital</span><span>Fundador da Digitalize Educação</span></div>
+    <p>Fundou a Next Digital e transformou uma operação desorganizada em mais de 50 clientes ativos e R$ 2 milhões por ano, com 7 pessoas. Desde 2022, leva esse método a donos de agência no Brasil e em mais de 8 países.</p>
+    <div class="ms"><div><b>+50</b><span>clientes ativos</span></div><div><b>R$ 2 mi+</b><span>por ano</span></div><div><b>7</b><span>pessoas no time</span></div><div><b>+3.000</b><span>agências</span></div></div>
+  </div>
+</section>
+
+<!-- 12 INVESTIMENTO -->
+<section class="sl dark">
+  <div class="grain"></div>
+  <div class="top"><span class="tag">Investimento</span><span class="pg"><svg><use href="#d"/></svg>12</span></div>
+  <h2 class="h2" style="text-align:center">Você investiria R$ 290 por mês pra ter uma agência <span class="it">que cresce sem depender de você?</span></h2>
+  <div class="offer">
+    <div class="l">
+      <span class="x">10x de</span>
+      <span class="v">R$ 290</span>
+      <span class="av">ou <b>R$ 2.500</b> à vista</span>
+      <span class="tot">R$ 2.900 no parcelado</span>
+      <p class="g">7 dias de garantia. Se decidir que não é pra você, a gente devolve 100% do valor.</p>
+    </div>
+    <div class="r">
+      <h3>Está incluído</h3>
+      <ul>
+        <li>Implementação com plano de execução <b>12 semanas</b></li>
+        <li>Grupo individual + acompanhamento <b>12 semanas</b></li>
+        <li>Calls individuais com o Henrique <b>2</b></li>
+        <li>Encontros ao vivo em grupo <b>24</b></li>
+        <li>Hot seats e comunidade Club <b>6 meses</b></li>
+        <li>8 módulos, templates e IA <b>incluso</b></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 13 PRÓXIMO PASSO -->
+<section class="sl">
+  <div class="top"><span class="tag">Próximo passo</span><span class="pg"><svg><use href="#d"/></svg>13</span></div>
+  <h2 class="h2" style="font-size:46px">O único risco que você corre é estar no mesmo lugar daqui a 6 meses, <span class="it">apagando incêndio e dependendo de indicação.</span></h2>
+  <div class="paths">
+    <article class="path"><span class="k">Sem plano</span><h3>Continuar “fazendo de tudo”</h3><p>Operando no improviso, apagando incêndio e esperando a próxima indicação.</p></article>
+    <article class="path b"><span class="k">Com plano de execução</span><h3>Executar o plano com o Club</h3><p>12 semanas de implementação, 24 encontros em grupo e uma agência nichada que cresce sem você no centro de tudo.</p></article>
+  </div>
+  <div class="steps">
+    <div><span class="n">1</span><p>Confirmar a vaga: 10x de R$ 290 ou R$ 2.500 à vista.</p></div>
+    <div><span class="n">2</span><p>Entrar no grupo individual e na comunidade Club.</p></div>
+    <div><span class="n">3</span><p>1ª call com o Henrique: diagnóstico e plano de execução.</p></div>
+  </div>
+</section>
+
+<script>
+(() => {
+  const pos = (w) => `calc(3px + (100% - 6px)*${((w - .5) / 26).toFixed(4)})`;
+  document.getElementById('calls').innerHTML = [2, 7].map((w, i) => `<i class="tl-dot" style="left:${pos(w)}">${i + 1}</i>`).join('');
+  document.getElementById('ticks').innerHTML = Array.from({ length: 24 }, (_, k) => `<i class="tl-tick" style="left:${pos(1 + k * 25 / 23)}"></i>`).join('');
+  document.fonts.ready.then(() => document.body.setAttribute('data-ready', '1'));
+})();
+</script>
+</body>
+</html>
