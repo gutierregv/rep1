@@ -1,0 +1,67 @@
+/* ===== Fonts (Digitalize Club identity) ===== */
+@font-face{font-family:Haas;font-weight:300;src:url(assets/fonts/NeueHaasDisplay-Light.ttf)}
+@font-face{font-family:Haas;font-weight:400;src:url(assets/fonts/NeueHaasDisplay-Roman.ttf)}
+@font-face{font-family:Haas;font-weight:500;src:url(assets/fonts/NeueHaasDisplay-Mediu.ttf)}
+@font-face{font-family:Haas;font-weight:700;src:url(assets/fonts/NeueHaasDisplay-Bold.ttf)}
+@font-face{font-family:Haas;font-weight:400;font-style:italic;src:url(assets/fonts/Haas-RomanOblique.ttf)}
+@font-face{font-family:Haas;font-weight:500;font-style:italic;src:url(assets/fonts/Haas-MediumOblique.ttf)}
+@font-face{font-family:Haas;font-weight:700;font-style:italic;src:url(assets/fonts/Haas-BoldOblique.ttf)}
+@font-face{font-family:Anton;src:url(assets/fonts/1Ptgg87LROyAm3Kz-C8.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
+@font-face{font-family:Anton;src:url(assets/fonts/1Ptgg87LROyAm3K9-C8QSw.woff2) format('woff2');unicode-range:U+0100-02BA,U+1E00-1E9F}
+@font-face{font-family:'Instrument Serif';font-style:italic;src:url(assets/fonts/jizHRFtNs2ka5fXjeivQ4LroWlx-6zAjjH7M.woff2) format('woff2')}
+@font-face{font-family:'Instrument Serif';font-style:normal;src:url(assets/fonts/jizBRFtNs2ka5fXjeivQ4LroWlx-6zUTjg.woff2) format('woff2')}
+@font-face{font-family:Figtree;font-weight:300 900;src:url(assets/fonts/_Xms-HUzqDCFdgfMm4S9DQ.woff2) format('woff2')}
+
+:root{
+  --blue:#0184fd; --blue-d:#0159da; --red:#eb1643; --grey:#969696; --cream:#fffef5;
+  --line:#1a5ce8;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#111}
+body{display:flex;flex-direction:column;align-items:center;gap:24px;padding:24px 0}
+@media print{ html,body{padding:0;margin:0;gap:0;background:none;display:block;width:1440px} @page{size:1440px 810px;margin:0} }
+
+.s{position:relative;width:1440px;height:810px;overflow:hidden;background:#000;color:#fff;
+   font-family:Haas,'Inter Display',sans-serif;break-after:page;page-break-after:always;flex:none}
+.s *{position:absolute}
+.s span,.s b,.s i,.s u,.s em,.s br,.s .il,.s .il *{position:static}
+.t{white-space:nowrap;line-height:1}
+
+/* type */
+.hl{font-weight:300}.hr{font-weight:400}.hm{font-weight:500}.hb{font-weight:700}
+.it{font-style:italic}
+.an{font-family:Anton,Impact,sans-serif;font-weight:400}
+.is{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400}
+.fg{font-family:Figtree,sans-serif}
+.blue{color:var(--blue)} .blued{color:var(--blue-d)} .red{color:var(--red)} .grey{color:var(--grey)}
+b{font-weight:700} .m{font-weight:500}
+.tight{letter-spacing:-.02em}
+.u{text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:7px}
+
+/* backgrounds */
+.bg-grey{background:linear-gradient(90deg,#141414 0%,#3a3a3a 100%)}
+.card{left:81px;top:84px;width:1278px;height:645px;background:#000;border-radius:38px}
+.bg-navy{background:
+   radial-gradient(42% 60% at 100% 104%,#0152c4 0%,rgba(1,70,170,.55) 40%,rgba(0,0,0,0) 100%),
+   radial-gradient(70% 80% at 30% 40%,#06214a 0%,rgba(4,26,58,.6) 40%,rgba(0,0,0,0) 80%),
+   linear-gradient(115deg,#000 0%,#031329 30%,#020a17 55%,#000 70%,#000 100%)}
+
+/* logo */
+.logo{display:flex;align-items:center;height:41px}
+.logo svg{position:static;height:100%;width:auto}
+.logo .w{position:static;font-weight:700;color:#fff;letter-spacing:-.035em;line-height:1;margin-left:.24em;transform:translateY(-.06em)}
+
+/* tags */
+.tag{border:2px solid var(--line);border-radius:999px}
+.tagbox{border:1.6px solid #1d4fe0;border-radius:18px}
+.mih{display:flex;align-items:center}
+.circ{border:2px solid #8d8d8d;border-radius:50%}
+
+/* pills */
+.pill-b{background:linear-gradient(80deg,#0150d6 0%,#0a7cff 100%);border-radius:28px}
+.pill-r{background:linear-gradient(90deg,#000 0%,#c4000c 100%);border-radius:18px}
+
+/* bullets */
+ul.bl{list-style:none}
+ul.bl li{position:relative;padding-left:46px;white-space:nowrap}
+ul.bl li::before{content:"";position:absolute;left:18px;top:.52em;width:7px;height:7px;border-radius:50%;background:#fff}
