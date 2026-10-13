@@ -337,6 +337,21 @@ h1,h2,h3{font-weight:500;letter-spacing:-.035em;line-height:1.04}
 .tl-impl.alt{background:linear-gradient(90deg,#3A5A94,var(--blue2))}
 @media (max-width:1080px){.acomp{grid-template-columns:1fr 1fr}.plan-g.j3{grid-template-columns:1fr}}
 @media (max-width:720px){.acomp{grid-template-columns:1fr}}
+
+.plan-g .dl{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px}
+.plan-g figure{margin:0;border-radius:14px;background:rgba(255,255,255,.04);border:1px solid var(--wl);overflow:hidden;display:flex;flex-direction:column}
+.plan-g .im{aspect-ratio:4/3;background:radial-gradient(80% 80% at 50% 40%,rgba(124,155,214,.18),rgba(12,21,38,.4));display:grid;place-items:center;padding:8px}
+.plan-g .im img{max-width:100%;max-height:100%;object-fit:contain;filter:drop-shadow(0 8px 16px rgba(0,0,0,.35))}
+.plan-g figcaption{padding:10px 12px 12px;display:flex;flex-direction:column;gap:3px}
+.plan-g figcaption b{font-weight:500;font-size:14px;color:#fff;letter-spacing:-.01em;line-height:1.25}
+.plan-g figcaption span{font-size:12.5px;color:var(--wt2);line-height:1.35}
+
+.plan-g.j3{grid-template-columns:1fr}
+.plan-g.j3 .ph{display:grid;grid-template-columns:280px 1fr;grid-template-rows:auto auto 1fr;column-gap:28px;row-gap:8px;padding:24px}
+.plan-g.j3 .ph>.w,.plan-g.j3 .ph>h4,.plan-g.j3 .ph>.d{grid-column:1}
+.plan-g.j3 .ph>h4{font-size:22px}
+.plan-g.j3 .dl{grid-column:2;grid-row:1/4;grid-template-columns:repeat(4,1fr);margin-top:0}
+@media (max-width:1080px){.plan-g.j3 .ph{grid-template-columns:1fr}.plan-g.j3 .dl{grid-column:1;grid-row:auto;grid-template-columns:1fr 1fr;margin-top:8px}}
 </style>
 </head>
 <body>
@@ -477,9 +492,9 @@ h1,h2,h3{font-weight:500;letter-spacing:-.035em;line-height:1.04}
     <div class="plan rv">
       <div class="plan-h"><h3>Metodologia de implementação: <span class="it">3 jornadas em 12 semanas</span></h3><p>Marketing, vendas e operação construídos como um único sistema, em que cada etapa alimenta a próxima.</p></div>
       <div class="plan-g j3">
-        <div class="ph"><span class="w">Jornada 01</span><h4>Posicionamento e geração de demanda</h4><p class="d">Como sua agência ganha atenção, constrói autoridade no nicho e gera novas oportunidades.</p><ul><li>Oferta e posicionamento no nicho</li><li>Estratégia de conteúdo por estágio do funil</li><li>Processo de criação e roteiros de reels e stories</li><li>Conteúdo + ads pra distribuir a mensagem</li></ul></div>
-        <div class="ph"><span class="w">Jornada 02</span><h4>Funil e vendas</h4><p class="d">Interesse vira jornada comercial clara, da chegada do lead até o fechamento.</p><ul><li>Funil de reuniões previsíveis</li><li>Sistema de criativos pra gerar leads e reuniões</li><li>Qualificação e SLA</li><li>Estrutura comercial: pitch, proposta, metas, follow-up e controle do funil</li></ul></div>
-        <div class="ph"><span class="w">Jornada 03</span><h4>Processos e operação</h4><p class="d">A estrutura pra sua agência crescer sem você empurrando cada etapa.</p><ul><li>Fluxos internos e responsabilidades</li><li>Rotinas eficientes</li><li>Controle de qualidade</li><li>Playbooks, reunião de resultado e modelos editáveis</li></ul></div>
+        <div class="ph"><span class="w">Jornada 01</span><h4>Posicionamento e geração de demanda</h4><p class="d">Como sua agência ganha atenção, constrói autoridade no nicho e gera novas oportunidades.</p><div class="dl"><figure><div class="im"><img src="assets/growth/card_12.webp" alt="Estratégia de conteúdo" loading="lazy"></div><figcaption><b>Estratégia de conteúdo</b><span>Temas conectados aos estágios do funil</span></figcaption></figure><figure><div class="im"><img src="assets/growth/Group-580.webp" alt="Processo de criação" loading="lazy"></div><figcaption><b>Processo de criação</b><span>Rotina pra produzir com consistência</span></figcaption></figure><figure><div class="im"><img src="assets/growth/Group-578-1.png" alt="Reels e stories" loading="lazy"></div><figcaption><b>Reels e stories</b><span>Roteiros pra atenção e conversão</span></figcaption></figure><figure><div class="im"><img src="assets/growth/Group-535-_1_.webp" alt="Conteúdo + ads" loading="lazy"></div><figcaption><b>Conteúdo + ads</b><span>Distribuição pra gerar demanda</span></figcaption></figure></div></div>
+        <div class="ph"><span class="w">Jornada 02</span><h4>Funil e vendas</h4><p class="d">Interesse vira jornada comercial clara, da chegada do lead até o fechamento.</p><div class="dl"><figure><div class="im"><img src="assets/growth/card_05.webp" alt="Funil de reuniões previsíveis" loading="lazy"></div><figcaption><b>Funil de reuniões previsíveis</b><span>Demanda vira oportunidade comercial</span></figcaption></figure><figure><div class="im"><img src="assets/growth/card_06.webp" alt="Sistema de criativos" loading="lazy"></div><figcaption><b>Sistema de criativos</b><span>Peças pra gerar leads e reuniões</span></figcaption></figure><figure><div class="im"><img src="assets/growth/card_07.webp" alt="Qualificação e SLA" loading="lazy"></div><figcaption><b>Qualificação e SLA</b><span>Filtrar e direcionar os melhores leads</span></figcaption></figure><figure><div class="im"><img src="assets/growth/Group-549-2.png" alt="Estrutura comercial" loading="lazy"></div><figcaption><b>Estrutura comercial</b><span>Pitch, proposta, metas e follow-up</span></figcaption></figure></div></div>
+        <div class="ph"><span class="w">Jornada 03</span><h4>Processos e operação</h4><p class="d">A estrutura pra sua agência crescer sem você empurrando cada etapa.</p><div class="dl"><figure><div class="im"><img src="assets/growth/Group-533-_1_.webp" alt="Fluxos internos" loading="lazy"></div><figcaption><b>Fluxos internos</b><span>Responsabilidades, entregas e processos</span></figcaption></figure><figure><div class="im"><img src="assets/growth/Group-150-_1_.webp" alt="Rotinas eficientes" loading="lazy"></div><figcaption><b>Rotinas eficientes</b><span>Mais controle, menos tempo perdido</span></figcaption></figure><figure><div class="im"><img src="assets/growth/Group-450-_1_.webp" alt="Controle de qualidade" loading="lazy"></div><figcaption><b>Controle de qualidade</b><span>Padrão conforme a agência cresce</span></figcaption></figure><figure><div class="im"><img src="assets/growth/Group-534.webp" alt="Playbooks e modelos" loading="lazy"></div><figcaption><b>Playbooks e modelos</b><span>Reunião de resultado e materiais editáveis</span></figcaption></figure></div></div>
       </div>
       <div class="after"><span class="it">E a implementação não termina aqui.</span> Depois das 12 semanas, você continua no Club até completar os 6 meses, com encontros ao vivo em grupo, hot seats e comunidade.</div>
     </div>
