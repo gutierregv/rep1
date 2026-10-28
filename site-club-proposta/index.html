@@ -352,6 +352,45 @@ h1,h2,h3{font-weight:500;letter-spacing:-.035em;line-height:1.04}
 .plan-g.j3 .ph>h4{font-size:22px}
 .plan-g.j3 .dl{grid-column:2;grid-row:1/4;grid-template-columns:repeat(4,1fr);margin-top:0}
 @media (max-width:1080px){.plan-g.j3 .ph{grid-template-columns:1fr}.plan-g.j3 .dl{grid-column:1;grid-row:auto;grid-template-columns:1fr 1fr;margin-top:8px}}
+
+/* pirâmide e GTM */
+.pyrsec{background:var(--navy);color:#fff;overflow:hidden}
+.pyrsec::before{content:"";position:absolute;inset:0;background:radial-gradient(55% 60% at 0% 100%,rgba(79,120,201,.3),transparent 70%),radial-gradient(40% 50% at 100% 0%,rgba(124,155,214,.18),transparent 70%)}
+.pyrsec .wrap{position:relative}
+.pyr-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:clamp(36px,4vw,56px)}
+.pyr2{display:grid;grid-template-columns:minmax(0,1fr) 64px minmax(0,1fr);gap:clamp(20px,3vw,48px);align-items:start;border-top:1px solid var(--wl);padding-top:clamp(32px,3.4vw,56px)}
+.pcol{display:flex;flex-direction:column;align-items:center;gap:22px;text-align:center}
+.pcol .pl{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--wt2);font-weight:500}
+.pcol .pl.on{color:var(--blue3)}
+.pcol p{font-size:16px;color:var(--wt);max-width:44ch;line-height:1.55}
+.pyr-wrap{width:min(100%,380px);perspective:900px}
+.pyr-svg{width:100%;height:auto;overflow:visible}
+.pyr-svg .lv{fill:rgba(255,255,255,.04);stroke:rgba(184,202,238,.38);stroke-width:1}
+.pyr-svg .lv.on{fill:var(--blue3);stroke:var(--blue3)}
+.pyr-svg .pt{fill:#fff;font:500 17px var(--sans);letter-spacing:-.02em;text-anchor:middle}
+.pyr-svg .pt.dk{fill:var(--navy)}
+.pyr-svg g{opacity:0;transform:translateY(14px);transform-box:fill-box;transition:opacity .7s var(--ez),transform .7s var(--ez)}
+.pyr2.in .pyr-svg g{opacity:1;transform:none}
+.pyr2.in .old g:nth-of-type(1){transition-delay:.15s}.pyr2.in .old g:nth-of-type(2){transition-delay:.3s}.pyr2.in .old g:nth-of-type(3){transition-delay:.45s}
+.pyr2.in .new g:nth-of-type(1){transition-delay:.8s}.pyr2.in .new g:nth-of-type(2){transition-delay:.9s}.pyr2.in .new g:nth-of-type(3){transition-delay:1s}
+.pyr-wrap.flip{transform:rotateX(180deg);transform-origin:50% 50%;transition:transform 1.3s cubic-bezier(.6,0,.2,1) 1.6s}
+.pyr2.in .pyr-wrap.flip{transform:none}
+.new .pyr-svg .pt{opacity:0;transition:opacity .5s var(--ez)}.pyr2.in .new .pyr-svg .pt{opacity:1;transition-delay:2.75s}
+.pyr2 .arrow{color:var(--blue2);width:64px;align-self:center;margin-top:-60px;opacity:0;transform:translateX(-10px);transition:opacity .6s var(--ez) .7s,transform .6s var(--ez) .7s}
+.pyr2.in .arrow{opacity:1;transform:none}
+.pcol .ptx{opacity:0;transition:opacity .8s var(--ez)}
+.pyr2.in .old .ptx{opacity:1;transition-delay:.6s}.pyr2.in .new .ptx{opacity:1;transition-delay:2.6s}
+.gtm .nlist{border-top:1px solid var(--line2)}
+.gtm .nrow{display:grid;grid-template-columns:80px 1fr;gap:20px;align-items:baseline;padding:24px 0;border-bottom:1px solid var(--line2);opacity:0;transform:translateX(-18px);transition:opacity .7s var(--ez),transform .7s var(--ez)}
+.gtm .nlist.in .nrow{opacity:1;transform:none}
+.gtm .nlist.in .nrow:nth-child(2){transition-delay:.12s}.gtm .nlist.in .nrow:nth-child(3){transition-delay:.24s}.gtm .nlist.in .nrow:nth-child(4){transition-delay:.36s}.gtm .nlist.in .nrow:nth-child(5){transition-delay:.48s}
+.gtm .ix{font-family:var(--serif);font-style:italic;font-size:34px;line-height:1;color:var(--blue2)}
+.gtm .tx{font-size:clamp(17px,1.3vw,21px);color:var(--ink3);line-height:1.45}
+.gtm .tx b{font-weight:500;color:var(--ink)}
+.gtm .nrow.hl{background:linear-gradient(90deg,var(--ice),transparent);border-radius:16px;padding-inline:16px;margin-inline:-16px}
+.gtm .nrow.hl .ix{color:var(--blue)}
+@media (max-width:900px){.pyr2{grid-template-columns:1fr}.pyr2 .arrow{transform:rotate(90deg);justify-self:center;margin-top:0}.pyr2.in .arrow{transform:rotate(90deg)}.gtm .nrow{grid-template-columns:52px 1fr}}
+@media (prefers-reduced-motion:reduce){.new .pyr-svg .pt,.pyr-svg g,.pyr-wrap.flip,.pyr2 .arrow,.pcol .ptx,.gtm .nrow{opacity:1!important;transform:none!important;transition:none!important}.pyr2 .arrow{transform:none}}
 </style>
 </head>
 <body>
@@ -458,6 +497,56 @@ h1,h2,h3{font-weight:500;letter-spacing:-.035em;line-height:1.04}
 </section>
 
 <!-- METADE -->
+<!-- PIRÂMIDE -->
+<section class="sec pyrsec" id="piramide">
+  <div class="grain"></div>
+  <div class="wrap">
+    <div class="pyr-head rv">
+      <div class="sec-head" style="margin-bottom:0"><span class="tag">A pirâmide</span><h2 class="h2">A pirâmide virou <span class="it">de cabeça pra baixo.</span></h2></div>
+      <a class="btn light" href="#oferta">Quero minha vaga <span class="ar"><svg><use href="#arr"/></svg></span></a>
+    </div>
+    <div class="pyr2">
+      <div class="pcol old">
+        <span class="pl">Na era da indicação</span>
+        <div class="pyr-wrap"><svg viewBox="0 0 300 220" class="pyr-svg" role="img" aria-label="Pirâmide antiga: 1º serviço, 2º preço, 3º nicho">
+          <g><polygon points="150,10 196,80 104,80" class="lv"/><text x="150" y="60" class="pt">3º nicho</text></g>
+          <g><polygon points="104,80 196,80 242,150 58,150" class="lv"/><text x="150" y="122" class="pt">2º preço</text></g>
+          <g><polygon points="58,150 242,150 288,214 12,214" class="lv on"/><text x="150" y="190" class="pt dk">1º serviço</text></g>
+        </svg></div>
+        <p class="ptx">Se você sabia rodar tráfego e cobrava um preço justo, o nicho era detalhe. O cliente chegava por indicação e qualquer segmento servia. “Atendo de padaria a construtora” soava como vantagem.</p>
+      </div>
+      <div class="arrow" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M6 20h26M22 10l10 10-10 10" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></div>
+      <div class="pcol new">
+        <span class="pl on">Hoje</span>
+        <div class="pyr-wrap flip"><svg viewBox="0 0 300 220" class="pyr-svg" role="img" aria-label="Pirâmide invertida: 1º nicho, 2º oferta, 3º serviço">
+          <g><polygon points="12,6 288,6 242,70 58,70" class="lv on"/><text x="150" y="46" class="pt dk">1º nicho</text></g>
+          <g><polygon points="58,70 242,70 196,140 104,140" class="lv"/><text x="150" y="112" class="pt">2º oferta</text></g>
+          <g><polygon points="104,140 196,140 150,214" class="lv"/><text x="150" y="168" class="pt">3º serviço</text></g>
+        </svg></div>
+        <p class="ptx">Quem decide o jogo é o nicho. Ganha quem é o primeiro a posicionar uma oferta clara em cima de um nicho mal atendido. Tráfego, social, site: virou o meio. Precisa ser bom, mas é terciário.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GTM -->
+<section class="sec gtm" id="gtm">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="tag">Go-to-market</span>
+      <h2 class="h2">O maior problema da sua agência <span class="it">não é marketing.</span></h2>
+      <p class="sub">Vamos ser bem diretos, porque essa é a parte em que o mercado de agência mais mente pra você.</p>
+    </div>
+    <div class="nlist">
+      <div class="nrow"><span class="ix">01</span><p class="tx"><b>Mais um curso de tráfego não vai resolver.</b> Você já sabe entregar. O problema nunca foi técnica.</p></div>
+      <div class="nrow"><span class="ix">02</span><p class="tx"><b>60% das agências de marketing no Brasil fecham antes de completar 5 anos.</b> Fonte: Sebrae. E a maioria não fecha porque o caixa zerou.</p></div>
+      <div class="nrow"><span class="ix">03</span><p class="tx"><b>Fecha faturando R$ 8, 10, 15 mil por mês,</b> presa, porque o dono virou o funil inteiro sozinho: gera, vende, entrega, cobra. Até não aguentar mais.</p></div>
+      <div class="nrow"><span class="ix">04</span><p class="tx"><b>É falta de GTM pra alavancar receita.</b> Nicho, oferta por segmento, funil de reuniões, processo comercial e uma operação que roda sem você no centro de tudo.</p></div>
+      <div class="nrow hl"><span class="ix">05</span><p class="tx"><b>Num mercado onde quem se posiciona primeiro leva o nicho,</b> sistema é tudo que você precisa.</p></div>
+    </div>
+  </div>
+</section>
+
 <section class="sec" id="praquem">
   <div class="wrap who">
     <div class="sticky sec-head rv">
@@ -687,7 +776,7 @@ h1,h2,h3{font-weight:500;letter-spacing:-.035em;line-height:1.04}
 <script>
 (() => {
   const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px', threshold: .08 });
-  document.querySelectorAll('.rv,#chart,#cron').forEach((el) => io.observe(el));
+  document.querySelectorAll('.rv,#chart,#cron,.pyr2,.nlist').forEach((el) => io.observe(el));
   const nav = document.getElementById('nav'), mbar = document.getElementById('mbar'), offer = document.getElementById('oferta');
   const onScroll = () => {
     nav.classList.toggle('solid', scrollY > 40);
