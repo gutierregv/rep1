@@ -821,6 +821,39 @@ h1,h2,h3{font-weight:500;letter-spacing:-.035em;line-height:1.04}
 .offer .r h3.bk-h{margin-top:22px}
 @media (max-width:1080px){.bk-g{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:640px){.bk-g{grid-template-columns:minmax(0,1fr)}.bk-c{min-height:0}.bk-c h3{margin-top:6px}}
+
+/* TRILHA BLACK */
+.tr{background:var(--ice2)}
+.tr-g{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(28px,5vw,80px);margin-top:clamp(28px,3vw,48px);align-items:start}
+.tr-v{position:sticky;top:110px}
+.tr-stage{display:flex;align-items:baseline;gap:10px;margin-bottom:16px}
+.tr-c{font-size:clamp(44px,4.4vw,64px);font-weight:500;letter-spacing:-.05em;line-height:1;color:var(--ink);font-variant-numeric:tabular-nums}
+.tr-of{font-size:15px;color:var(--ink4)}
+.tr-sn{margin-left:auto;display:inline-flex;align-items:center;height:32px;padding:0 14px;border-radius:99px;background:var(--navy);color:#fff;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:500}
+.tr-frame{position:relative;aspect-ratio:1/1;border-radius:var(--r-lg);background:#fff;border:1px solid var(--line);overflow:hidden;box-shadow:0 40px 80px -50px rgba(12,21,38,.45)}
+.tr-im{position:absolute;inset:6%;width:88%;height:88%;object-fit:contain;opacity:0;transform:scale(.96) translateY(10px);transition:opacity .6s var(--ez),transform .8s var(--ez)}
+.tr-im.on{opacity:1;transform:none}
+.tr-bar{margin-top:16px;height:3px;border-radius:3px;background:var(--line)}
+.tr-bar i{display:block;height:100%;width:14.3%;border-radius:3px;background:var(--blue);transition:width .6s var(--ez)}
+.tr-l{display:flex;flex-direction:column}
+.tr-s{min-height:min(62vh,520px);display:flex;flex-direction:column;justify-content:center;gap:12px;padding:28px 0;border-top:1px solid var(--line);opacity:.35;transition:opacity .5s var(--ez)}
+.tr-s.on{opacity:1}
+.tr-k{display:flex;align-items:center;gap:12px}
+.tr-n{font-size:13px;font-weight:500;letter-spacing:.12em;color:var(--blue)}
+.tr-st{font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;color:var(--ink4)}
+.tr-s h3{font-size:clamp(26px,2.6vw,38px);letter-spacing:-.035em;line-height:1.08;font-weight:500}
+.tr-s p{font-size:16.5px;color:var(--ink3);max-width:46ch}
+.tr-impl{margin-top:6px;padding:14px 16px;border-radius:14px;background:#fff;border:1px solid var(--line);display:flex;flex-direction:column;gap:4px;max-width:46ch}
+.tr-impl span{font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;color:var(--blue)}
+.tr-impl b{font-weight:400;font-size:15px;color:var(--ink2)}
+.tr-mi{display:none}
+.tr-end{margin-top:20px;padding:30px;border-radius:var(--r);background:linear-gradient(150deg,var(--blue),var(--deep));color:#fff;display:flex;flex-direction:column;gap:12px}
+.tr-end .tr-st{color:rgba(255,255,255,.75)}
+.tr-end h3{font-size:clamp(24px,2.2vw,30px);letter-spacing:-.03em;line-height:1.12;font-weight:500}
+.tr-end p{color:rgba(255,255,255,.85);font-size:15.5px}
+.tr-end .btn{align-self:flex-start;margin-top:4px}
+@media (max-width:900px){.tr-g{grid-template-columns:minmax(0,1fr)}.tr-v{display:none}.tr-s{min-height:0;opacity:1}.tr-mi{display:block;width:100%;max-width:420px;aspect-ratio:1/1;object-fit:contain;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:5%;margin:6px 0}}
+@media (prefers-reduced-motion:reduce){.tr-im,.tr-s,.tr-bar i{transition:none}}
 </style>
 </head>
 <body>
@@ -1021,14 +1054,23 @@ h1,h2,h3{font-weight:500;letter-spacing:-.035em;line-height:1.04}
       <article class="ac rv"><span class="n">03</span><h3>2 calls com o Henrique</h3><p>Duas calls individuais durante a implementação: uma pra fechar o diagnóstico e o plano, outra pra revisar a execução e ajustar a rota.</p></article>
       <article class="ac rv"><span class="n">04</span><h3>Acompanhamento do Henrique</h3><p>O próprio Henrique acompanha a sua implementação: revisa o que foi executado, direciona o próximo passo e destrava o que estiver parado.</p></article>
     </div>
-    <div class="plan rv">
-      <div class="plan-h"><h3>Metodologia de implementação: <span class="it">3 jornadas em 12 semanas</span></h3><p>Marketing, vendas e operação construídos como um único sistema, em que cada etapa alimenta a próxima.</p></div>
-      <div class="plan-g j3">
-        <div class="ph"><span class="w">Jornada 01</span><h4>Posicionamento e geração de demanda</h4><p class="d">Como sua agência ganha atenção, constrói autoridade no nicho e gera novas oportunidades.</p><div class="dl"><figure><div class="im"><img src="assets/growth/card_12.webp" alt="Estratégia de conteúdo" loading="lazy"></div><figcaption><b>Estratégia de conteúdo</b><span>Temas conectados aos estágios do funil</span></figcaption></figure><figure><div class="im"><img src="assets/growth/Group-580.webp" alt="Processo de criação" loading="lazy"></div><figcaption><b>Processo de criação</b><span>Rotina pra produzir com consistência</span></figcaption></figure><figure><div class="im"><img src="assets/growth/Group-578-1.png" alt="Reels e stories" loading="lazy"></div><figcaption><b>Reels e stories</b><span>Roteiros pra atenção e conversão</span></figcaption></figure><figure><div class="im"><img src="assets/growth/Group-535-_1_.webp" alt="Conteúdo + ads" loading="lazy"></div><figcaption><b>Conteúdo + ads</b><span>Distribuição pra gerar demanda</span></figcaption></figure></div></div>
-        <div class="ph"><span class="w">Jornada 02</span><h4>Funil e vendas</h4><p class="d">Interesse vira jornada comercial clara, da chegada do lead até o fechamento.</p><div class="dl"><figure><div class="im"><img src="assets/growth/card_05.webp" alt="Funil de reuniões previsíveis" loading="lazy"></div><figcaption><b>Funil de reuniões previsíveis</b><span>Demanda vira oportunidade comercial</span></figcaption></figure><figure><div class="im"><img src="assets/growth/card_06.webp" alt="Sistema de criativos" loading="lazy"></div><figcaption><b>Sistema de criativos</b><span>Peças pra gerar leads e reuniões</span></figcaption></figure><figure><div class="im"><img src="assets/growth/card_07.webp" alt="Qualificação e SLA" loading="lazy"></div><figcaption><b>Qualificação e SLA</b><span>Filtrar e direcionar os melhores leads</span></figcaption></figure><figure><div class="im"><img src="assets/growth/Group-549-2.png" alt="Estrutura comercial" loading="lazy"></div><figcaption><b>Estrutura comercial</b><span>Pitch, proposta, metas e follow-up</span></figcaption></figure></div></div>
-        <div class="ph"><span class="w">Jornada 03</span><h4>Processos e operação</h4><p class="d">A estrutura pra sua agência crescer sem você empurrando cada etapa.</p><div class="dl"><figure><div class="im"><img src="assets/growth/Group-533-_1_.webp" alt="Fluxos internos" loading="lazy"></div><figcaption><b>Fluxos internos</b><span>Responsabilidades, entregas e processos</span></figcaption></figure><figure><div class="im"><img src="assets/growth/Group-150-_1_.webp" alt="Rotinas eficientes" loading="lazy"></div><figcaption><b>Rotinas eficientes</b><span>Mais controle, menos tempo perdido</span></figcaption></figure><figure><div class="im"><img src="assets/growth/Group-450-_1_.webp" alt="Controle de qualidade" loading="lazy"></div><figcaption><b>Controle de qualidade</b><span>Padrão conforme a agência cresce</span></figcaption></figure><figure><div class="im"><img src="assets/growth/Group-534.webp" alt="Playbooks e modelos" loading="lazy"></div><figcaption><b>Playbooks e modelos</b><span>Reunião de resultado e materiais editáveis</span></figcaption></figure></div></div>
+    <div class="after rv" style="margin-top:28px;color:var(--wt);font-size:16px"><span class="it">E a implementação não termina aqui.</span> Depois das 12 semanas, você continua no Club até completar os 6 meses, com encontros ao vivo em grupo, hot seats e comunidade.</div>
+  </div>
+</section>
+
+<!-- TRILHA BLACK -->
+<section class="sec tr" id="black">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="tag">Bônus da Black + implementação</span>
+      <h2 class="h2">Da escolha do nicho à primeira reunião, <span class="it">com o time montando junto.</span></h2>
+      <p class="sub">Na Black, cada etapa da implementação começa com uma entrega pronta do time da Digitalize. Você recebe a base feita e implementa na sua agência com o Henrique ao longo das 12 semanas.</p>
+    </div>
+    <div class="tr-g">
+      <div class="tr-v"><div class="tr-stage"><span class="tr-c" id="trC">01</span><span class="tr-of">/ 07</span><span class="tr-sn" id="trSn">Posicionamento</span></div><div class="tr-frame"><img class="tr-im on" data-i="0" src="assets/growth/card_12.webp" alt="Escolha do nicho" loading="lazy"><img class="tr-im" data-i="1" src="assets/growth/Group-150-_1_.webp" alt="Oferta da agência" loading="lazy"><img class="tr-im" data-i="2" src="assets/growth/Group-535-_1_.webp" alt="30 dias de planejamento de conteúdo" loading="lazy"><img class="tr-im" data-i="3" src="assets/growth/Group-578-1.png" alt="Roteiros de reels e stories" loading="lazy"><img class="tr-im" data-i="4" src="assets/growth/card_06.webp" alt="5 criativos de anúncio" loading="lazy"><img class="tr-im" data-i="5" src="assets/growth/Group-534.webp" alt="Proposta comercial e script de diagnóstico" loading="lazy"><img class="tr-im" data-i="6" src="assets/growth/Group-549-2.png" alt="Acesso a todos os arquivos da Digitalize" loading="lazy"></div><div class="tr-bar"><i id="trBar"></i></div></div>
+      <div class="tr-l"><article class="tr-s on" data-i="0" data-st="Posicionamento"><div class="tr-k"><span class="tr-n">01</span><span class="tr-st">Posicionamento</span></div><img class="tr-mi" src="assets/growth/card_12.webp" alt="" loading="lazy"><h3>Escolha do nicho</h3><p>Uma análise dos nichos com mais potencial para a sua agência, usando o score de qualificação: faturamento, urgência e maturidade comercial. Você sai com o nicho definido e o motivo da escolha por escrito.</p><div class="tr-impl"><span>No Club, você implementa</span><b>Posicionar o perfil e o site da agência dentro do nicho escolhido.</b></div></article><article class="tr-s" data-i="1" data-st="Posicionamento"><div class="tr-k"><span class="tr-n">02</span><span class="tr-st">Posicionamento</span></div><img class="tr-mi" src="assets/growth/Group-150-_1_.webp" alt="" loading="lazy"><h3>Oferta da agência</h3><p>A oferta nichada pronta: para quem é, o que entrega, quanto custa e por que o cliente deve fechar com você e não com a agência que faz de tudo.</p><div class="tr-impl"><span>No Club, você implementa</span><b>Precificar com o ticket certo e treinar o pitch da oferta.</b></div></article><article class="tr-s" data-i="2" data-st="Geração de demanda"><div class="tr-k"><span class="tr-n">03</span><span class="tr-st">Geração de demanda</span></div><img class="tr-mi" src="assets/growth/Group-535-_1_.webp" alt="" loading="lazy"><h3>30 dias de planejamento de conteúdo</h3><p>Um calendário de um mês com os temas ligados a cada estágio do funil, pensados para o nicho escolhido.</p><div class="tr-impl"><span>No Club, você implementa</span><b>Montar a rotina de produção para manter a constância depois do primeiro mês.</b></div></article><article class="tr-s" data-i="3" data-st="Geração de demanda"><div class="tr-k"><span class="tr-n">04</span><span class="tr-st">Geração de demanda</span></div><img class="tr-mi" src="assets/growth/Group-578-1.png" alt="" loading="lazy"><h3>Roteiros de reels e stories</h3><p>Os roteiros desse mês prontos para gravar, com gancho, desenvolvimento e chamada para a reunião.</p><div class="tr-impl"><span>No Club, você implementa</span><b>Gravar, publicar e acompanhar quais conteúdos trazem reunião.</b></div></article><article class="tr-s" data-i="4" data-st="Geração de demanda"><div class="tr-k"><span class="tr-n">05</span><span class="tr-st">Geração de demanda</span></div><img class="tr-mi" src="assets/growth/card_06.webp" alt="" loading="lazy"><h3>5 criativos de anúncio</h3><p>Cinco peças feitas pelo time da Digitalize para começar a gerar reuniões no nicho.</p><div class="tr-impl"><span>No Club, você implementa</span><b>Distribuir com anúncios e ligar os criativos ao funil de reuniões.</b></div></article><article class="tr-s" data-i="5" data-st="Vendas"><div class="tr-k"><span class="tr-n">06</span><span class="tr-st">Vendas</span></div><img class="tr-mi" src="assets/growth/Group-534.webp" alt="" loading="lazy"><h3>Proposta comercial e script de diagnóstico</h3><p>A proposta no formato que a Digitalize usa para fechar clientes e o roteiro da reunião de diagnóstico, adaptados à sua oferta.</p><div class="tr-impl"><span>No Club, você implementa</span><b>Qualificar os leads, definir SLA, metas e a cadência de follow-up.</b></div></article><article class="tr-s" data-i="6" data-st="Operação"><div class="tr-k"><span class="tr-n">07</span><span class="tr-st">Operação</span></div><img class="tr-mi" src="assets/growth/Group-549-2.png" alt="" loading="lazy"><h3>Acesso a todos os arquivos da Digitalize</h3><p>Contratos, propostas, planilhas de fluxo de caixa, modelos de planejamento, playbooks e os materiais que usamos na operação.</p><div class="tr-impl"><span>No Club, você implementa</span><b>Organizar fluxos internos, rotinas e controle de qualidade para a agência crescer sem tudo passar por você.</b></div></article>
+        <a class="tr-end rv" href="#oferta"><span class="tr-st">Black Friday</span><h3>As sete entregas, pelo mesmo valor do Club.</h3><p>10x de R$ 290 ou R$ 2.500 à vista. Depois das 12 semanas, você segue no Club até completar os 6 meses, com encontros ao vivo, hot seats e comunidade.</p><span class="btn light">Ver a oferta <span class="ar"><svg><use href="#arr"/></svg></span></span></a>
       </div>
-      <div class="after"><span class="it">E a implementação não termina aqui.</span> Depois das 12 semanas, você continua no Club até completar os 6 meses, com encontros ao vivo em grupo, hot seats e comunidade.</div>
     </div>
   </div>
 </section>
@@ -1042,7 +1084,7 @@ h1,h2,h3{font-weight:500;letter-spacing:-.035em;line-height:1.04}
       <p class="sub">Não é curso. É ambiente: plano de execução, encontros ao vivo em grupo e comunidade trabalhando juntos por 6 meses.</p>
     </div>
     <div class="fmt">
-      <article class="fbox hi rv"><span class="tag">Implementação</span><span class="big">12<small>semanas</small></span><h3>Grupo individual, plano e 2 calls</h3><p>As 3 jornadas implementadas na sua agência, com grupo exclusivo, 2 calls e acompanhamento do próprio Henrique.</p></article>
+      <article class="fbox hi rv"><span class="tag">Implementação</span><span class="big">12<small>semanas</small></span><h3>Grupo individual, plano e 2 calls</h3><p>O plano de execução e os bônus da Black implementados na sua agência, com grupo exclusivo, 2 calls e acompanhamento do próprio Henrique.</p></article>
       <article class="fbox rv"><span class="tag">Mentoria em grupo</span><span class="big">24<small>encontros</small></span><h3>Ao vivo com o Henrique</h3><p>Os encontros acompanham o plano: o que executar, o que ajustar e o que vem a seguir.</p></article>
       <article class="fbox rv"><span class="tag">Hot seats + comunidade</span><span class="big">6<small>meses</small></span><h3>Seu problema vira a aula</h3><p>Hot seats e mais de 150 donos de agência executando junto com você, do começo ao fim.</p></article>
     </div>
@@ -1050,7 +1092,7 @@ h1,h2,h3{font-weight:500;letter-spacing:-.035em;line-height:1.04}
       <div class="cron-h"><h3>Como os 6 meses se distribuem</h3><p>As 12 primeiras semanas concentram o plano de execução. Os 24 encontros em grupo e a comunidade seguem até o fim dos 6 meses.</p></div>
       <div class="tl-scroll"><div class="tl">
         <div class="tl-m"><span style="border:0"></span><span>Mês 1</span><span>Mês 2</span><span>Mês 3</span><span>Mês 4</span><span>Mês 5</span><span>Mês 6</span></div>
-        <div class="tl-r"><span>Implementação</span><div class="tl-t"><div class="tl-impl">12 semanas · 3 jornadas + plano de execução</div></div></div>
+        <div class="tl-r"><span>Implementação</span><div class="tl-t"><div class="tl-impl">12 semanas · plano de execução + bônus da Black</div></div></div>
         <div class="tl-r"><span>Grupo individual</span><div class="tl-t"><div class="tl-impl alt">acompanhamento do Henrique nas 12 semanas</div></div></div>
         <div class="tl-r"><span>Calls com o Henrique</span><div class="tl-t"><i class="tl-dot" style="left:calc(3px + (100% - 6px)*0.0577)">1</i><i class="tl-dot" style="left:calc(3px + (100% - 6px)*0.2500)">2</i></div></div>
         <div class="tl-r"><span>Encontros em grupo</span><div class="tl-t"><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.0192)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.0610)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.1028)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.1446)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.1865)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.2283)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.2701)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.3119)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.3537)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.3955)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.4373)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.4791)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.5209)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.5627)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.6045)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.6463)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.6881)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.7299)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.7717)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.8135)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.8554)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.8972)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.9390)"></i><i class="tl-tick" style="left:calc(3px + (100% - 6px)*0.9808)"></i></div></div>
@@ -1067,10 +1109,10 @@ h1,h2,h3{font-weight:500;letter-spacing:-.035em;line-height:1.04}
     <div class="sec-head rv">
       <span class="tag">Entregáveis</span>
       <h2 class="h2">Tudo que vem junto <span class="it">com o Club.</span></h2>
-      <p class="sub">6 meses de acesso completo. Os bônus da Black vêm logo abaixo.</p>
+      <p class="sub">6 meses de acesso completo. Os bônus da Black estão na trilha acima.</p>
     </div>
     <ul class="checks">
-      <li class="rv"><svg><use href="#chk"/></svg><div><b>Implementação de 12 semanas</b><span>Diagnóstico, plano de execução e as 3 jornadas na sua agência.</span></div></li>
+      <li class="rv"><svg><use href="#chk"/></svg><div><b>Implementação de 12 semanas</b><span>Diagnóstico, plano de execução e implementação na sua agência.</span></div></li>
       <li class="rv"><svg><use href="#chk"/></svg><div><b>Grupo individual com o Henrique</b><span>Grupo exclusivo da sua agência e acompanhamento dele nas 12 semanas.</span></div></li>
       <li class="rv"><svg><use href="#chk"/></svg><div><b>2 calls com o Henrique</b><span>Diagnóstico e plano no início, revisão da execução no meio do caminho.</span></div></li>
       <li class="rv"><svg><use href="#chk"/></svg><div><b>24 encontros ao vivo em grupo</b><span>Estratégia, análise e direcionamento conectados aos gargalos reais.</span></div></li>
@@ -1079,19 +1121,6 @@ h1,h2,h3{font-weight:500;letter-spacing:-.035em;line-height:1.04}
       <li class="rv"><svg><use href="#chk"/></svg><div><b>8 módulos práticos</b><span>Aulas e encontros gravados na plataforma Circle.</span></div></li>
       <li class="rv"><svg><use href="#chk"/></svg><div><b>IA dentro da sua agência</b><span>Automação de processos e menos retrabalho, sem aumentar o time.</span></div></li>
     </ul>
-  </div>
-</section>
-
-<!-- BLACK -->
-<section class="sec dark bk" id="black">
-  <div class="grain"></div>
-  <div class="wrap">
-    <div class="sec-head rv">
-      <span class="tag">Só na Black</span>
-      <h2 class="h2">Na Black, o time da Digitalize <span class="it">monta com você.</span></h2>
-      <p class="sub">Além de tudo do Club, quem entra na Black Friday recebe sete entregas feitas pela equipe da Digitalize a partir do diagnóstico da sua agência.</p>
-    </div>
-    <div class="bk-g"><article class="bk-c rv"><span class="bk-n">01</span><h3>Escolha do nicho</h3><p>Uma análise dos nichos com mais potencial para a sua agência, usando o score de qualificação: faturamento, urgência e maturidade comercial. Você sai com o nicho definido e o motivo da escolha por escrito.</p></article><article class="bk-c rv"><span class="bk-n">02</span><h3>Oferta da agência</h3><p>A oferta nichada pronta: para quem é, o que entrega, quanto custa e por que o cliente deve fechar com você e não com a agência que faz de tudo.</p></article><article class="bk-c rv"><span class="bk-n">03</span><h3>30 dias de planejamento de conteúdo</h3><p>Um calendário de um mês com os temas ligados a cada estágio do funil, pensados para o nicho escolhido.</p></article><article class="bk-c rv"><span class="bk-n">04</span><h3>Roteiros de reels e stories</h3><p>Os roteiros desse mês prontos para gravar, com gancho, desenvolvimento e chamada para a reunião.</p></article><article class="bk-c rv"><span class="bk-n">05</span><h3>5 criativos de anúncio</h3><p>Cinco peças feitas pelo time da Digitalize para começar a gerar reuniões no nicho.</p></article><article class="bk-c rv"><span class="bk-n">06</span><h3>Proposta comercial e script de diagnóstico</h3><p>A proposta no formato que a Digitalize usa para fechar clientes e o roteiro da reunião de diagnóstico, adaptados à sua oferta.</p></article><article class="bk-c rv"><span class="bk-n">07</span><h3>Acesso a todos os arquivos da Digitalize</h3><p>Contratos, propostas, planilhas de fluxo de caixa, modelos de planejamento, playbooks e os materiais que usamos na operação.</p></article><a class="bk-c bk-cta rv" href="#oferta"><span class="bk-n">Black Friday</span><h3>Pelo mesmo valor do Club.</h3><p>10x de R$ 290 ou R$ 2.500 à vista.</p><span class="btn light">Ver a oferta <span class="ar"><svg><use href="#arr"/></svg></span></span></a></div>
   </div>
 </section>
 
@@ -1293,5 +1322,8 @@ h1,h2,h3{font-weight:500;letter-spacing:-.035em;line-height:1.04}
 </script>
 
 
+<script>(()=>{const ss=[...document.querySelectorAll('.tr-s')];if(!ss.length)return;const ims=[...document.querySelectorAll('.tr-im')],c=document.getElementById('trC'),sn=document.getElementById('trSn'),bar=document.getElementById('trBar');
+const set=i=>{ss.forEach((s,k)=>s.classList.toggle('on',k===i));ims.forEach((m,k)=>m.classList.toggle('on',k===i));c.textContent=String(i+1).padStart(2,'0');sn.textContent=ss[i].dataset.st;bar.style.width=((i+1)/ss.length*100)+'%';};
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)set(+e.target.dataset.i)}),{rootMargin:'-45% 0px -45% 0px'});ss.forEach(s=>io.observe(s));})();</script>
 </body>
 </html>
