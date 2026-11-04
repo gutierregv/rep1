@@ -822,38 +822,34 @@ h1,h2,h3{font-weight:500;letter-spacing:-.035em;line-height:1.04}
 @media (max-width:1080px){.bk-g{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:640px){.bk-g{grid-template-columns:minmax(0,1fr)}.bk-c{min-height:0}.bk-c h3{margin-top:6px}}
 
-/* TRILHA BLACK */
-.tr{background:var(--ice2)}
-.tr-g{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(28px,5vw,80px);margin-top:clamp(28px,3vw,48px);align-items:start}
-.tr-v{position:sticky;top:110px}
-.tr-stage{display:flex;align-items:baseline;gap:10px;margin-bottom:16px}
-.tr-c{font-size:clamp(44px,4.4vw,64px);font-weight:500;letter-spacing:-.05em;line-height:1;color:var(--ink);font-variant-numeric:tabular-nums}
-.tr-of{font-size:15px;color:var(--ink4)}
-.tr-sn{margin-left:auto;display:inline-flex;align-items:center;height:32px;padding:0 14px;border-radius:99px;background:var(--navy);color:#fff;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:500}
-.tr-frame{position:relative;aspect-ratio:1/1;border-radius:var(--r-lg);background:#fff;border:1px solid var(--line);overflow:hidden;box-shadow:0 40px 80px -50px rgba(12,21,38,.45)}
-.tr-im{position:absolute;inset:6%;width:88%;height:88%;object-fit:contain;opacity:0;transform:scale(.96) translateY(10px);transition:opacity .6s var(--ez),transform .8s var(--ez)}
-.tr-im.on{opacity:1;transform:none}
-.tr-bar{margin-top:16px;height:3px;border-radius:3px;background:var(--line)}
-.tr-bar i{display:block;height:100%;width:14.3%;border-radius:3px;background:var(--blue);transition:width .6s var(--ez)}
-.tr-l{display:flex;flex-direction:column}
-.tr-s{min-height:min(62vh,520px);display:flex;flex-direction:column;justify-content:center;gap:12px;padding:28px 0;border-top:1px solid var(--line);opacity:.35;transition:opacity .5s var(--ez)}
-.tr-s.on{opacity:1}
-.tr-k{display:flex;align-items:center;gap:12px}
-.tr-n{font-size:13px;font-weight:500;letter-spacing:.12em;color:var(--blue)}
-.tr-st{font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;color:var(--ink4)}
-.tr-s h3{font-size:clamp(26px,2.6vw,38px);letter-spacing:-.035em;line-height:1.08;font-weight:500}
-.tr-s p{font-size:16.5px;color:var(--ink3);max-width:46ch}
-.tr-impl{margin-top:6px;padding:14px 16px;border-radius:14px;background:#fff;border:1px solid var(--line);display:flex;flex-direction:column;gap:4px;max-width:46ch}
-.tr-impl span{font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;color:var(--blue)}
-.tr-impl b{font-weight:400;font-size:15px;color:var(--ink2)}
-.tr-mi{display:none}
-.tr-end{margin-top:20px;padding:30px;border-radius:var(--r);background:linear-gradient(150deg,var(--blue),var(--deep));color:#fff;display:flex;flex-direction:column;gap:12px}
-.tr-end .tr-st{color:rgba(255,255,255,.75)}
-.tr-end h3{font-size:clamp(24px,2.2vw,30px);letter-spacing:-.03em;line-height:1.12;font-weight:500}
-.tr-end p{color:rgba(255,255,255,.85);font-size:15.5px}
-.tr-end .btn{align-self:flex-start;margin-top:4px}
-@media (max-width:900px){.tr-g{grid-template-columns:minmax(0,1fr)}.tr-v{display:none}.tr-s{min-height:0;opacity:1}.tr-mi{display:block;width:100%;max-width:420px;aspect-ratio:1/1;object-fit:contain;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:5%;margin:6px 0}}
-@media (prefers-reduced-motion:reduce){.tr-im,.tr-s,.tr-bar i{transition:none}}
+
+/* BONUS BLACK BENTO */
+.bt{background:#05080F;color:#fff;overflow:hidden;position:relative}
+.bt::before{content:"";position:absolute;inset:0;background:radial-gradient(45% 50% at 0% 0%,rgba(79,120,201,.25),transparent 70%),radial-gradient(40% 45% at 100% 100%,rgba(124,155,214,.16),transparent 70%)}
+.bt .wrap{position:relative}
+.bt-g{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:clamp(28px,3vw,44px)}
+.bt-c{display:flex;flex-direction:column;border-radius:var(--r);background:rgba(255,255,255,.045);border:1px solid var(--wl);overflow:hidden;transition:border-color .4s,transform .5s var(--ez)}
+.bt-c:hover{border-color:rgba(184,202,238,.35);transform:translateY(-3px)}
+.bt-c.w3{grid-column:span 3}.bt-c.w4{grid-column:span 4}.bt-c.w6{grid-column:span 6}.bt-c.w8{grid-column:span 8}
+.bt-c.hz{flex-direction:row}
+.bt-im{background:#F4F6FA;display:grid;place-items:center;aspect-ratio:1/1;padding:4%}
+.bt-c.hz .bt-im{aspect-ratio:auto;flex:0 0 46%}
+.bt-im img{width:100%;height:100%;object-fit:contain}
+.bt-tx{padding:24px;display:flex;flex-direction:column;gap:10px;flex:1}
+.bt-k{display:flex;gap:10px;align-items:center}
+.bt-n{font-size:12.5px;font-weight:500;letter-spacing:.12em;color:var(--blue3)}
+.bt-st{font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;color:var(--wt2)}
+.bt-c h3{font-size:21px;font-weight:500;letter-spacing:-.025em;line-height:1.18}
+.bt-c p{font-size:14.5px;color:var(--wt);line-height:1.45}
+.bt-c .bt-impl{margin-top:auto;padding-top:12px;border-top:1px solid var(--wl);font-size:13.5px;color:var(--wt)}
+.bt-impl span{color:var(--blue3)}
+.bt-cta{background:linear-gradient(150deg,var(--blue),var(--deep));border-color:transparent}
+.bt-cta .bt-tx{justify-content:flex-end;padding:30px}
+.bt-cta .bt-st{color:rgba(255,255,255,.75)}
+.bt-cta h3{font-size:clamp(24px,2.2vw,30px)}
+.bt-cta .btn{align-self:flex-start;margin-top:6px}
+@media (max-width:1080px){.bt-g{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){.bt-g{grid-template-columns:minmax(0,1fr)}}
 </style>
 </head>
 <body>
@@ -1058,20 +1054,16 @@ h1,h2,h3{font-weight:500;letter-spacing:-.035em;line-height:1.04}
   </div>
 </section>
 
-<!-- TRILHA BLACK -->
-<section class="sec tr" id="black">
+<!-- BONUS BLACK -->
+<section class="sec dark bt" id="black">
+  <div class="grain"></div>
   <div class="wrap">
     <div class="sec-head rv">
-      <span class="tag">Bônus da Black + implementação</span>
-      <h2 class="h2">Da escolha do nicho à primeira reunião, <span class="it">com o time montando junto.</span></h2>
-      <p class="sub">Na Black, cada etapa da implementação começa com uma entrega pronta do time da Digitalize. Você recebe a base feita e implementa na sua agência com o Henrique ao longo das 12 semanas.</p>
+      <span class="tag">Só na Black</span>
+      <h2 class="h2">Sete entregas que o time da Digitalize <span class="it">monta com você.</span></h2>
+      <p class="sub">Cada uma é feita a partir do diagnóstico da sua agência. Você recebe a base pronta e implementa com o Henrique ao longo das 12 semanas.</p>
     </div>
-    <div class="tr-g">
-      <div class="tr-v"><div class="tr-stage"><span class="tr-c" id="trC">01</span><span class="tr-of">/ 07</span><span class="tr-sn" id="trSn">Posicionamento</span></div><div class="tr-frame"><img class="tr-im on" data-i="0" src="assets/growth/card_12.webp" alt="Escolha do nicho" loading="lazy"><img class="tr-im" data-i="1" src="assets/growth/Group-150-_1_.webp" alt="Oferta da agência" loading="lazy"><img class="tr-im" data-i="2" src="assets/growth/Group-535-_1_.webp" alt="30 dias de planejamento de conteúdo" loading="lazy"><img class="tr-im" data-i="3" src="assets/growth/Group-578-1.png" alt="Roteiros de reels e stories" loading="lazy"><img class="tr-im" data-i="4" src="assets/growth/card_06.webp" alt="5 criativos de anúncio" loading="lazy"><img class="tr-im" data-i="5" src="assets/growth/Group-534.webp" alt="Proposta comercial e script de diagnóstico" loading="lazy"><img class="tr-im" data-i="6" src="assets/growth/Group-549-2.png" alt="Acesso a todos os arquivos da Digitalize" loading="lazy"></div><div class="tr-bar"><i id="trBar"></i></div></div>
-      <div class="tr-l"><article class="tr-s on" data-i="0" data-st="Posicionamento"><div class="tr-k"><span class="tr-n">01</span><span class="tr-st">Posicionamento</span></div><img class="tr-mi" src="assets/growth/card_12.webp" alt="" loading="lazy"><h3>Escolha do nicho</h3><p>Uma análise dos nichos com mais potencial para a sua agência, usando o score de qualificação: faturamento, urgência e maturidade comercial. Você sai com o nicho definido e o motivo da escolha por escrito.</p><div class="tr-impl"><span>No Club, você implementa</span><b>Posicionar o perfil e o site da agência dentro do nicho escolhido.</b></div></article><article class="tr-s" data-i="1" data-st="Posicionamento"><div class="tr-k"><span class="tr-n">02</span><span class="tr-st">Posicionamento</span></div><img class="tr-mi" src="assets/growth/Group-150-_1_.webp" alt="" loading="lazy"><h3>Oferta da agência</h3><p>A oferta nichada pronta: para quem é, o que entrega, quanto custa e por que o cliente deve fechar com você e não com a agência que faz de tudo.</p><div class="tr-impl"><span>No Club, você implementa</span><b>Precificar com o ticket certo e treinar o pitch da oferta.</b></div></article><article class="tr-s" data-i="2" data-st="Geração de demanda"><div class="tr-k"><span class="tr-n">03</span><span class="tr-st">Geração de demanda</span></div><img class="tr-mi" src="assets/growth/Group-535-_1_.webp" alt="" loading="lazy"><h3>30 dias de planejamento de conteúdo</h3><p>Um calendário de um mês com os temas ligados a cada estágio do funil, pensados para o nicho escolhido.</p><div class="tr-impl"><span>No Club, você implementa</span><b>Montar a rotina de produção para manter a constância depois do primeiro mês.</b></div></article><article class="tr-s" data-i="3" data-st="Geração de demanda"><div class="tr-k"><span class="tr-n">04</span><span class="tr-st">Geração de demanda</span></div><img class="tr-mi" src="assets/growth/Group-578-1.png" alt="" loading="lazy"><h3>Roteiros de reels e stories</h3><p>Os roteiros desse mês prontos para gravar, com gancho, desenvolvimento e chamada para a reunião.</p><div class="tr-impl"><span>No Club, você implementa</span><b>Gravar, publicar e acompanhar quais conteúdos trazem reunião.</b></div></article><article class="tr-s" data-i="4" data-st="Geração de demanda"><div class="tr-k"><span class="tr-n">05</span><span class="tr-st">Geração de demanda</span></div><img class="tr-mi" src="assets/growth/card_06.webp" alt="" loading="lazy"><h3>5 criativos de anúncio</h3><p>Cinco peças feitas pelo time da Digitalize para começar a gerar reuniões no nicho.</p><div class="tr-impl"><span>No Club, você implementa</span><b>Distribuir com anúncios e ligar os criativos ao funil de reuniões.</b></div></article><article class="tr-s" data-i="5" data-st="Vendas"><div class="tr-k"><span class="tr-n">06</span><span class="tr-st">Vendas</span></div><img class="tr-mi" src="assets/growth/Group-534.webp" alt="" loading="lazy"><h3>Proposta comercial e script de diagnóstico</h3><p>A proposta no formato que a Digitalize usa para fechar clientes e o roteiro da reunião de diagnóstico, adaptados à sua oferta.</p><div class="tr-impl"><span>No Club, você implementa</span><b>Qualificar os leads, definir SLA, metas e a cadência de follow-up.</b></div></article><article class="tr-s" data-i="6" data-st="Operação"><div class="tr-k"><span class="tr-n">07</span><span class="tr-st">Operação</span></div><img class="tr-mi" src="assets/growth/Group-549-2.png" alt="" loading="lazy"><h3>Acesso a todos os arquivos da Digitalize</h3><p>Contratos, propostas, planilhas de fluxo de caixa, modelos de planejamento, playbooks e os materiais que usamos na operação.</p><div class="tr-impl"><span>No Club, você implementa</span><b>Organizar fluxos internos, rotinas e controle de qualidade para a agência crescer sem tudo passar por você.</b></div></article>
-        <a class="tr-end rv" href="#oferta"><span class="tr-st">Black Friday</span><h3>As sete entregas, pelo mesmo valor do Club.</h3><p>10x de R$ 290 ou R$ 2.500 à vista. Depois das 12 semanas, você segue no Club até completar os 6 meses, com encontros ao vivo, hot seats e comunidade.</p><span class="btn light">Ver a oferta <span class="ar"><svg><use href="#arr"/></svg></span></span></a>
-      </div>
-    </div>
+    <div class="bt-g"><article class="bt-c rv"><div class="bt-im"><img src="assets/growth/card_12.webp" alt="Escolha do nicho" loading="lazy"></div><div class="bt-tx"><div class="bt-k"><span class="bt-n">01</span><span class="bt-st">Posicionamento</span></div><h3>Escolha do nicho</h3><p>Uma análise dos nichos com mais potencial para a sua agência, usando o score de qualificação: faturamento, urgência e maturidade comercial. Você sai com o nicho definido e o motivo da escolha por escrito.</p><p class="bt-impl"><span>No Club, você implementa:</span> Posicionar o perfil e o site da agência dentro do nicho escolhido.</p></div></article><article class="bt-c rv"><div class="bt-im"><img src="assets/growth/Group-150-_1_.webp" alt="Oferta da agência" loading="lazy"></div><div class="bt-tx"><div class="bt-k"><span class="bt-n">02</span><span class="bt-st">Posicionamento</span></div><h3>Oferta da agência</h3><p>A oferta nichada pronta: para quem é, o que entrega, quanto custa e por que o cliente deve fechar com você e não com a agência que faz de tudo.</p><p class="bt-impl"><span>No Club, você implementa:</span> Precificar com o ticket certo e treinar o pitch da oferta.</p></div></article><article class="bt-c rv"><div class="bt-im"><img src="assets/growth/Group-535-_1_.webp" alt="30 dias de planejamento de conteúdo" loading="lazy"></div><div class="bt-tx"><div class="bt-k"><span class="bt-n">03</span><span class="bt-st">Geração de demanda</span></div><h3>30 dias de planejamento de conteúdo</h3><p>Um calendário de um mês com os temas ligados a cada estágio do funil, pensados para o nicho escolhido.</p><p class="bt-impl"><span>No Club, você implementa:</span> Montar a rotina de produção para manter a constância depois do primeiro mês.</p></div></article><article class="bt-c rv"><div class="bt-im"><img src="assets/growth/Group-578-1.png" alt="Roteiros de reels e stories" loading="lazy"></div><div class="bt-tx"><div class="bt-k"><span class="bt-n">04</span><span class="bt-st">Geração de demanda</span></div><h3>Roteiros de reels e stories</h3><p>Os roteiros desse mês prontos para gravar, com gancho, desenvolvimento e chamada para a reunião.</p><p class="bt-impl"><span>No Club, você implementa:</span> Gravar, publicar e acompanhar quais conteúdos trazem reunião.</p></div></article><article class="bt-c rv"><div class="bt-im"><img src="assets/growth/card_06.webp" alt="5 criativos de anúncio" loading="lazy"></div><div class="bt-tx"><div class="bt-k"><span class="bt-n">05</span><span class="bt-st">Geração de demanda</span></div><h3>5 criativos de anúncio</h3><p>Cinco peças feitas pelo time da Digitalize para começar a gerar reuniões no nicho.</p><p class="bt-impl"><span>No Club, você implementa:</span> Distribuir com anúncios e ligar os criativos ao funil de reuniões.</p></div></article><article class="bt-c rv"><div class="bt-im"><img src="assets/growth/Group-534.webp" alt="Proposta comercial e script de diagnóstico" loading="lazy"></div><div class="bt-tx"><div class="bt-k"><span class="bt-n">06</span><span class="bt-st">Vendas</span></div><h3>Proposta comercial e script de diagnóstico</h3><p>A proposta no formato que a Digitalize usa para fechar clientes e o roteiro da reunião de diagnóstico, adaptados à sua oferta.</p><p class="bt-impl"><span>No Club, você implementa:</span> Qualificar os leads, definir SLA, metas e a cadência de follow-up.</p></div></article><article class="bt-c rv"><div class="bt-im"><img src="assets/growth/Group-549-2.png" alt="Acesso a todos os arquivos da Digitalize" loading="lazy"></div><div class="bt-tx"><div class="bt-k"><span class="bt-n">07</span><span class="bt-st">Operação</span></div><h3>Acesso a todos os arquivos da Digitalize</h3><p>Contratos, propostas, planilhas de fluxo de caixa, modelos de planejamento, playbooks e os materiais que usamos na operação.</p><p class="bt-impl"><span>No Club, você implementa:</span> Organizar fluxos internos, rotinas e controle de qualidade para a agência crescer sem tudo passar por você.</p></div></article><a class="bt-c bt-cta rv" href="#oferta"><div class="bt-tx"><span class="bt-st">Black Friday</span><h3>As sete entregas, pelo mesmo valor do Club.</h3><p>10x de R$ 290 ou R$ 2.500 à vista.</p><span class="btn light">Ver a oferta <span class="ar"><svg><use href="#arr"/></svg></span></span></div></a></div>
   </div>
 </section>
 
@@ -1109,7 +1101,7 @@ h1,h2,h3{font-weight:500;letter-spacing:-.035em;line-height:1.04}
     <div class="sec-head rv">
       <span class="tag">Entregáveis</span>
       <h2 class="h2">Tudo que vem junto <span class="it">com o Club.</span></h2>
-      <p class="sub">6 meses de acesso completo. Os bônus da Black estão na trilha acima.</p>
+      <p class="sub">6 meses de acesso completo. Os bônus da Black estão logo acima.</p>
     </div>
     <ul class="checks">
       <li class="rv"><svg><use href="#chk"/></svg><div><b>Implementação de 12 semanas</b><span>Diagnóstico, plano de execução e implementação na sua agência.</span></div></li>
@@ -1322,8 +1314,6 @@ h1,h2,h3{font-weight:500;letter-spacing:-.035em;line-height:1.04}
 </script>
 
 
-<script>(()=>{const ss=[...document.querySelectorAll('.tr-s')];if(!ss.length)return;const ims=[...document.querySelectorAll('.tr-im')],c=document.getElementById('trC'),sn=document.getElementById('trSn'),bar=document.getElementById('trBar');
-const set=i=>{ss.forEach((s,k)=>s.classList.toggle('on',k===i));ims.forEach((m,k)=>m.classList.toggle('on',k===i));c.textContent=String(i+1).padStart(2,'0');sn.textContent=ss[i].dataset.st;bar.style.width=((i+1)/ss.length*100)+'%';};
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)set(+e.target.dataset.i)}),{rootMargin:'-45% 0px -45% 0px'});ss.forEach(s=>io.observe(s));})();</script>
+
 </body>
 </html>
