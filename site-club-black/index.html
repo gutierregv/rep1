@@ -917,6 +917,14 @@ body.loaded .hero-c .hero-card::after{animation:shineC 1.5s var(--ez) 2.1s 1 for
 .lg-r:hover .lg-im.fan img:nth-child(3){transform:rotate(9deg) translateX(6px)}
 @media (max-width:1100px){.lg-r{grid-template-columns:clamp(90px,10vw,140px) minmax(0,1fr) minmax(0,1fr)}.lg-im{grid-column:2/-1;max-width:260px}}
 @media (max-width:900px){.lg-r{grid-template-columns:minmax(0,1fr)}.lg-im{grid-column:1;max-width:240px}.lg-im.fan{aspect-ratio:auto;height:150px}}
+
+/* por que investir */
+.pq{padding:clamp(56px,5.6vw,108px) 0 0}
+.pq-head{display:grid;grid-template-columns:minmax(0,1fr) 34%;gap:clamp(24px,3vw,56px);align-items:end;margin-bottom:clamp(28px,3vw,52px)}
+.pq-head .t56{max-width:16ch;margin-top:clamp(14px,.9vw,17px)}
+.pq-l{margin-top:clamp(28px,3vw,52px)}
+.pq-l .nrow .tx{max-width:none}
+@media (max-width:1100px){.pq-head{grid-template-columns:minmax(0,1fr)}}
 /* como funciona */
 .cf{padding:clamp(64px,6.4vw,122px) 0 clamp(24px,3vw,48px)}
 .cf-head{display:grid;grid-template-columns:minmax(0,1fr) 34%;gap:clamp(24px,3vw,56px);align-items:end;margin-bottom:clamp(28px,3vw,52px)}
@@ -996,14 +1004,14 @@ body.loaded .hero-c .hero-card::after{animation:shineC 1.5s var(--ez) 2.1s 1 for
 <!-- HEADER -->
 <header class="nav" id="nav">
   <a class="brand" href="#top" aria-label="Digitalize"><svg class="logo-h" aria-hidden="true" viewBox="0 0 232 67" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M80.3334 20.4846C83.5136 20.4846 86.2801 20.8255 88.8117 22.7051C91.5816 24.79 93.1866 28.1059 93.1866 31.9016C93.1866 35.6974 91.6147 38.9768 88.6065 41.0948C85.9393 42.9744 83.4441 43.2822 80.2672 43.2822H74.3866V20.4846H80.3334ZM78.831 39.4534H80.1977C81.3261 39.4534 83.7849 39.3839 85.7672 37.951C87.5774 36.6537 88.6032 34.3273 88.6032 31.9016C88.6032 29.4759 87.6105 27.1859 85.8003 25.8192C83.9537 24.4524 81.7001 24.3168 80.1944 24.3168H78.8276V39.46L78.831 39.4534Z" fill="currentColor"/><path d="M101.734 20.4846V43.2822H97.2896V20.4846H101.734Z" fill="currentColor"/><path d="M118.482 31.0815H128.943V31.3561C128.943 32.895 128.738 37.6802 125.594 40.7909C123.234 43.1504 120.329 43.799 117.493 43.799C114.657 43.799 111.715 43.2166 109.22 40.7214C108.432 39.9338 105.838 37.0646 105.838 31.9386C105.838 27.5306 107.82 24.8303 109.187 23.4602C110.898 21.7162 113.767 19.9722 118.178 19.9722C119.889 19.9722 121.699 20.2469 123.443 21.1669C124.912 21.9181 126.521 23.2848 127.715 25.3366L123.853 27.4214C123.066 25.8826 121.904 25.0983 121.186 24.7211C120.23 24.2412 119.032 24.0029 117.973 24.0029C116.163 24.0029 114.111 24.6516 112.708 26.0183C111.41 27.2824 110.418 29.4699 110.418 32.0345C110.418 35.0758 111.718 36.8893 112.675 37.8125C113.7 38.8053 115.305 39.7617 117.734 39.7617C119.237 39.7617 120.948 39.3514 122.212 38.395C123.102 37.71 123.989 36.5484 124.366 34.907H118.489V31.0782L118.482 31.0815Z" fill="currentColor"/><path d="M137.488 20.4846V43.2822H133.044V20.4846H137.488Z" fill="currentColor"/><path d="M149.861 24.3134V43.2822H145.417V24.3134H140.291V20.4846H154.987V24.3134H149.861Z" fill="currentColor"/><path d="M169.961 38.497H160.768L158.753 43.2822H153.934L163.743 20.4846H167.231L176.768 43.2822H171.983L169.968 38.497H169.961ZM168.664 34.8733L165.418 26.6697L162.171 34.8733H168.664Z" fill="currentColor"/><path d="M183.874 20.4846V39.4534H190.916V43.2822H179.433V20.4846H183.877H183.874Z" fill="currentColor"/><path d="M195.976 20.4846V43.2822H194.474V20.4846H195.976Z" fill="currentColor"/><path d="M202.846 41.9155H216.347V43.2822H200.317L214.193 21.8513H201.648V20.4846H216.721L202.846 41.9155Z" fill="currentColor"/><path d="M232.001 21.8513H222.566V30.1245H231.796V31.4913H222.566V41.9155H232.001V43.2822H221.064V20.4846H232.001V21.8513Z" fill="currentColor"/><path d="M22.6091 21.4874H0.00012207V45.1354H22.6091V21.4874Z" fill="currentColor"/><path d="M33.3116 0.000259399H22.6094V21.4874H46.2574V45.1355H22.6094V66.6226H33.3116C51.7078 66.6226 66.6227 51.7077 66.6227 33.3114C66.6227 14.9152 51.7078 0.000259399 33.3116 0.000259399Z" fill="currentColor"/></svg></a>
-  <nav class="links" id="navLinks"><a href="#club">O Club</a><a href="#formato">Como funciona</a><a href="#black">Bônus da Black</a><a href="#oferta">Oferta</a><a href="#faq">Dúvidas</a></nav>
+  <nav class="links" id="navLinks"><a href="#club">O Club</a><a href="#porque">Por que investir</a><a href="#formato">Como funciona</a><a href="#black">Bônus da Black</a><a href="#oferta">Oferta</a><a href="#faq">Dúvidas</a></nav>
   <div class="right">
     <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menuPanel"><span class="dots"><i></i><i></i><i></i><i></i></span>Menu</button>
     <a class="btn" href="#oferta">Garantir vaga <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 3l4 4-4 4"/></svg></a>
   </div>
 </header>
 <div class="menu-panel" id="menuPanel">
-  <nav><a href="#club">O Club</a><a href="#formato">Como funciona</a><a href="#black">Bônus da Black</a><a href="#oferta">Oferta</a><a href="#faq">Dúvidas</a></nav>
+  <nav><a href="#club">O Club</a><a href="#porque">Por que investir</a><a href="#formato">Como funciona</a><a href="#black">Bônus da Black</a><a href="#oferta">Oferta</a><a href="#faq">Dúvidas</a></nav>
   <div class="foot kick">Digitalize Club · Black Friday</div>
 </div>
 
@@ -1049,6 +1057,26 @@ body.loaded .hero-c .hero-card::after{animation:shineC 1.5s var(--ez) 2.1s 1 for
           <div class="item last"><p>24 encontros ao vivo, hot seats e comunidade durante os 6 meses. <span class="cl">Mais de 150 donos de agência trocando processo e parceria.</span></p><svg class="pix" data-pix="spark"></svg></div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- POR QUE INVESTIR -->
+<section class="sec pq" id="porque">
+  <div class="wrap">
+    <div class="pq-head">
+      <div><span class="pill mono" data-in="up"><i></i>Por que investir</span><h2 class="t56 lift" data-lift>Quem ensina já fez isso na própria agência.</h2></div>
+      <p class="body" data-in="up" style="--dl:120ms">O que entra no Club é o que a Digitalize faz toda semana na própria operação, e o que já aplicamos com mais de 140 agências mentoradas.</p>
+    </div>
+    <div class="stats" data-in="stag">
+      <div class="stat big glow"><span class="lb">Faturamento da operação</span><div class="n">R$ 2 milhões</div><p class="cp">faturados no ano pela operação do Henrique.</p></div>
+      <div class="stat"><span class="lb">No operacional</span><div class="n">4 pessoas</div><p class="cp">para entregar esse faturamento, com nicho, processo e funil.</p></div>
+      <div class="stat"><span class="lb">Mentoria</span><div class="n">+140 agências</div><p class="cp">mentoradas pela Digitalize.</p></div>
+    </div>
+    <div class="nlist pq-l" data-in="stag">
+      <div class="nrow"><span class="ix">01</span><p class="tx"><b>Você aprende com quem opera.</b> O que chega no Club já passou pela nossa agenda, pelo nosso comercial e pelo nosso caixa antes de virar aula.</p></div>
+      <div class="nrow"><span class="ix">02</span><p class="tx"><b>Uma agência enxuta é o objetivo.</b> Faturar R$ 2 milhões no ano com 4 pessoas no operacional só acontece com nicho definido, processo e um funil que traz reunião. É isso que você implementa.</p></div>
+      <div class="nrow"><span class="ix">03</span><p class="tx"><b>Você não começa do zero.</b> Com os bônus da Black, a base sai pronta pelo time da Digitalize e o seu tempo vai para implementar e vender.</p></div>
     </div>
   </div>
 </section>
@@ -1143,7 +1171,7 @@ body.loaded .hero-c .hero-card::after{animation:shineC 1.5s var(--ez) 2.1s 1 for
   <div class="wrap">
     <div class="top">
       <div class="brand"><svg class="logo-stack" aria-hidden="true" viewBox="0 0 232 67" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M80.3334 20.4846C83.5136 20.4846 86.2801 20.8255 88.8117 22.7051C91.5816 24.79 93.1866 28.1059 93.1866 31.9016C93.1866 35.6974 91.6147 38.9768 88.6065 41.0948C85.9393 42.9744 83.4441 43.2822 80.2672 43.2822H74.3866V20.4846H80.3334ZM78.831 39.4534H80.1977C81.3261 39.4534 83.7849 39.3839 85.7672 37.951C87.5774 36.6537 88.6032 34.3273 88.6032 31.9016C88.6032 29.4759 87.6105 27.1859 85.8003 25.8192C83.9537 24.4524 81.7001 24.3168 80.1944 24.3168H78.8276V39.46L78.831 39.4534Z" fill="currentColor"/><path d="M101.734 20.4846V43.2822H97.2896V20.4846H101.734Z" fill="currentColor"/><path d="M118.482 31.0815H128.943V31.3561C128.943 32.895 128.738 37.6802 125.594 40.7909C123.234 43.1504 120.329 43.799 117.493 43.799C114.657 43.799 111.715 43.2166 109.22 40.7214C108.432 39.9338 105.838 37.0646 105.838 31.9386C105.838 27.5306 107.82 24.8303 109.187 23.4602C110.898 21.7162 113.767 19.9722 118.178 19.9722C119.889 19.9722 121.699 20.2469 123.443 21.1669C124.912 21.9181 126.521 23.2848 127.715 25.3366L123.853 27.4214C123.066 25.8826 121.904 25.0983 121.186 24.7211C120.23 24.2412 119.032 24.0029 117.973 24.0029C116.163 24.0029 114.111 24.6516 112.708 26.0183C111.41 27.2824 110.418 29.4699 110.418 32.0345C110.418 35.0758 111.718 36.8893 112.675 37.8125C113.7 38.8053 115.305 39.7617 117.734 39.7617C119.237 39.7617 120.948 39.3514 122.212 38.395C123.102 37.71 123.989 36.5484 124.366 34.907H118.489V31.0782L118.482 31.0815Z" fill="currentColor"/><path d="M137.488 20.4846V43.2822H133.044V20.4846H137.488Z" fill="currentColor"/><path d="M149.861 24.3134V43.2822H145.417V24.3134H140.291V20.4846H154.987V24.3134H149.861Z" fill="currentColor"/><path d="M169.961 38.497H160.768L158.753 43.2822H153.934L163.743 20.4846H167.231L176.768 43.2822H171.983L169.968 38.497H169.961ZM168.664 34.8733L165.418 26.6697L162.171 34.8733H168.664Z" fill="currentColor"/><path d="M183.874 20.4846V39.4534H190.916V43.2822H179.433V20.4846H183.877H183.874Z" fill="currentColor"/><path d="M195.976 20.4846V43.2822H194.474V20.4846H195.976Z" fill="currentColor"/><path d="M202.846 41.9155H216.347V43.2822H200.317L214.193 21.8513H201.648V20.4846H216.721L202.846 41.9155Z" fill="currentColor"/><path d="M232.001 21.8513H222.566V30.1245H231.796V31.4913H222.566V41.9155H232.001V43.2822H221.064V20.4846H232.001V21.8513Z" fill="currentColor"/><path d="M22.6091 21.4874H0.00012207V45.1354H22.6091V21.4874Z" fill="currentColor"/><path d="M33.3116 0.000259399H22.6094V21.4874H46.2574V45.1355H22.6094V66.6226H33.3116C51.7078 66.6226 66.6227 51.7077 66.6227 33.3114C66.6227 14.9152 51.7078 0.000259399 33.3116 0.000259399Z" fill="currentColor"/></svg><p>Black Friday do Digitalize Club: 6 meses de mentoria com o Henrique Avila e oito entregas feitas pelo time da Digitalize. 10x de R$ 290 ou R$ 2.500 à vista.</p></div>
-      <div class="c"><span class="kick">Página</span><a href="#club">O Club</a><a href="#formato">Como funciona</a><a href="#black">Bônus da Black</a><a href="#oferta">Oferta</a><a href="#faq">Dúvidas</a></div><div class="c"><span class="kick">Mentor</span><span>Henrique Avila</span><span>Digitalize Educação</span></div>
+      <div class="c"><span class="kick">Página</span><a href="#club">O Club</a><a href="#porque">Por que investir</a><a href="#formato">Como funciona</a><a href="#black">Bônus da Black</a><a href="#oferta">Oferta</a><a href="#faq">Dúvidas</a></div><div class="c"><span class="kick">Mentor</span><span>Henrique Avila</span><span>Digitalize Educação</span></div>
     </div>
     <div class="legal"><span>© 2026 Digitalize Educação</span><span>Digitalize Club · Black Friday</span></div>
   </div>
